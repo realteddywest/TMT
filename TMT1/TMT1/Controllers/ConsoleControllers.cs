@@ -18,7 +18,7 @@ namespace TMT1.Controllers
         public static ReadController read = new ReadController(context);
         public ConsoleController()
         {
-            Read();
+            Create();
         }
         public void Create()
         {
@@ -31,6 +31,9 @@ namespace TMT1.Controllers
                         break;
                     case "2":
                         InserIntoTowns();
+                        break;
+                    case "3":
+                        InsertIntoAgents();
                         break;
                     default: return;
                         //    break;
@@ -47,7 +50,7 @@ namespace TMT1.Controllers
                         PrintCoutiesInfo();
                         break;
                     case "2":
-                        PrintTownsInfo();                        
+                        PrintTownsInfo();
                         break;
                     default: return;
                         //    break;
@@ -86,6 +89,16 @@ namespace TMT1.Controllers
                 inOut.PrintMessage(message.MessageInsertTownTrue
                     (countryName, townName));
             }
+        }
+        public void InsertIntoAgents()
+        {
+            string agentName = inOut.ReadAgentName();
+            string agentNickName = inOut.ReadAgentNick();
+            int agentAge = inOut.ReadAge();
+            string townName = inOut.ReadTownName();
+            string countryName = inOut.ReadCountryName();
+            insert.InsertIntoAgents(agentName, agentNickName, agentAge,townName,countryName);
+            inOut.PrintMessage(message.MessageInsertAgentTrue());
         }
 
         public void PrintCoutiesInfo()

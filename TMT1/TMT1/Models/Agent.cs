@@ -13,6 +13,14 @@ namespace TMT1
         {
             Criminals = new HashSet<Criminal>();
         }
+        public Agent(string agentName,string agentNickName,int agentAge,int townId)
+        {
+            this.Name = agentName;
+            this.Nickname = agentNickName;
+            this.Age = agentAge;
+            this.TownId = townId;
+            Criminals = new HashSet<Criminal>();
+        }
 
         public int Id { get; set; }
 

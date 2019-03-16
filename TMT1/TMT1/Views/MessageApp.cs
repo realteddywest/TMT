@@ -32,7 +32,11 @@ namespace TMT1.Views
             return message;
         }
 
-
+        public string MessageInsertAgentTrue()
+        {
+            string message = $"New agent added!";
+            return message;
+        }
 
     }
 }

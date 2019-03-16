@@ -22,6 +22,21 @@ namespace TMT1.Views
             Console.WriteLine("Въведи име на град: ");
             return Console.ReadLine();
         }
+        public string ReadAgentName()
+        {
+            Console.WriteLine("Въведи име на агент: ");
+            return Console.ReadLine();
+        }
+        public string ReadAgentNick()
+        {
+            Console.WriteLine("Въведи псевдоним на агент: ");
+            return Console.ReadLine();
+        }
+        public int ReadAge()
+        {
+            Console.WriteLine("Въведи години: ");
+            return int.Parse(Console.ReadLine());
+        }
         public void PrintCoutriesInfo(List<Country> coutries)
         {
             Console.WriteLine($"{"ID",-4}{"Coutry name",-15}");

@@ -47,5 +47,15 @@ namespace TMT1.Controllers
                 return false;
             }
         }
+
+        public bool InsertIntoAgents(string agentName, string agentNickName, int agentAge, string townName, string countryName)
+        {
+            InsertIntoTowns(townName, countryName);
+            Town fTown = find.FindTown(countryName, townName);
+            Agent newAgent = new Agent(agentName, agentNickName, agentAge, fTown.Id);
+            context.Agents.Add(newAgent);
+            context.SaveChanges();
+            return true;
+        }
     }
 }

@@ -13,6 +13,7 @@ namespace TMT1.Views
         {
             Console.WriteLine("1 - Add Country");
             Console.WriteLine("2 - Add Town");
+            Console.WriteLine("2 - Add Agent");
             Console.Write("Choose command: ");
             return Console.ReadLine();
 
