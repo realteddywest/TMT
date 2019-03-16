@@ -57,5 +57,14 @@ namespace TMT1.Controllers
             context.SaveChanges();
             return true;
         }
+        public bool InsertIntoCriminals(string criminalName, string criminalNickName, string townName, string countryName, string crime, string sentence, string status, string evilnessFactor)
+        {
+            InsertIntoTowns(townName, countryName);
+            Town fTown = find.FindTown(countryName, townName);
+            Criminal newCriminal = new Criminal(criminalName,criminalNickName, fTown.Id, crime, sentence, status, evilnessFactor);
+            context.Criminals.Add(newCriminal);
+            context.SaveChanges();
+            return true;
+        }
     }
 }

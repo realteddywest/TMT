@@ -110,6 +110,20 @@ namespace TMT1.Controllers
         {
             inOut.PrintTownsInfo(read.TownsList());
         }
+        public void InsertIntoCriminals()
+        {
+            string criminalName = inOut.ReadCriminalName();
+            string criminalNickName = inOut.ReadCriminalNick();
+            string townName = inOut.ReadTownName();
+            string countryName = inOut.ReadCountryName();
+            string crime = inOut.ReadCrime();
+            string sentence = inOut.ReadSentence();
+            string status = inOut.ReadStatus();
+            string evilnessFactor = inOut.ReadEvilnessFactor();
+            insert.InsertIntoCriminals(criminalName, criminalNickName, townName, countryName, crime, sentence, status, evilnessFactor);
+            inOut.PrintMessage(message.MessageInsertCriminalTrue());
+        }
+
     }
 }
 

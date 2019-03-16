@@ -37,6 +37,11 @@ namespace TMT1.Views
             string message = $"New agent added!";
             return message;
         }
+        public string MessageInsertCriminalTrue()
+        {
+            string message = $"New criminal added!";
+            return message;
+        }
 
     }
 }

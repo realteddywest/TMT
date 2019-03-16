@@ -22,6 +22,7 @@ namespace TMT1.Views
             Console.WriteLine("Въведи име на град: ");
             return Console.ReadLine();
         }
+
         public string ReadAgentName()
         {
             Console.WriteLine("Въведи име на агент: ");
@@ -37,6 +38,41 @@ namespace TMT1.Views
             Console.WriteLine("Въведи години: ");
             return int.Parse(Console.ReadLine());
         }
+        //----------------------------
+
+        public string ReadCriminalName()
+        {
+            Console.WriteLine("Въведи име на : ");
+            return Console.ReadLine();
+        }
+        public string ReadCriminalNick()
+        {
+            Console.WriteLine("Въведи псевдоним на агент: ");
+            return Console.ReadLine();
+        }
+        public string ReadCrime()
+        {
+            Console.WriteLine("Въведи псевдоним на агент: ");
+            return Console.ReadLine();
+        }
+        public string ReadSentence()
+        {
+            Console.WriteLine("Въведи псевдоним на агент: ");
+            return Console.ReadLine();
+        }
+        public string ReadStatus()
+        {
+            Console.WriteLine("Въведи псевдоним на агент: ");
+            return Console.ReadLine();
+        }
+        public string ReadEvilnessFactor()
+        {
+            Console.WriteLine("Въведи псевдоним на агент: ");
+            return Console.ReadLine();
+        }
+
+
+        //--------------------------------
         public void PrintCountriesInfo(List<Country> coutries)
         {
             Console.WriteLine($"{"ID",-4}{"Coutry name",-15}");
