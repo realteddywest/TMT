@@ -47,7 +47,7 @@ namespace TMT1.Controllers
                 switch (menu.MenuRead())
                 {
                     case "1":
-                        PrintCoutiesInfo();
+                        PrintCountriesInfo();
                         break;
                     case "2":
                         PrintTownsInfo();
@@ -101,9 +101,9 @@ namespace TMT1.Controllers
             inOut.PrintMessage(message.MessageInsertAgentTrue());
         }
 
-        public void PrintCoutiesInfo()
+        public void PrintCountriesInfo()
         {
-            inOut.PrintCoutriesInfo(read.CoutriesList());
+            inOut.PrintCountriesInfo(read.CountriesList());
         }
 
         public void PrintTownsInfo()

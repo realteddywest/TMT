@@ -37,7 +37,7 @@ namespace TMT1.Views
             Console.WriteLine("Въведи години: ");
             return int.Parse(Console.ReadLine());
         }
-        public void PrintCoutriesInfo(List<Country> coutries)
+        public void PrintCountriesInfo(List<Country> coutries)
         {
             Console.WriteLine($"{"ID",-4}{"Coutry name",-15}");
             foreach (var c in coutries)

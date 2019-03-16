@@ -14,7 +14,7 @@ namespace TMT1.Controllers
             this.context = context;
         }
 
-        public List<Country> CoutriesList()
+        public List<Country> CountriesList()
         {
             return context.Countries.ToList();
         }
