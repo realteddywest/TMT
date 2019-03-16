@@ -52,9 +52,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controller\ConsoleControllers.cs" />
-    <Compile Include="Controller\Find.cs" />
-    <Compile Include="Controller\InsertControllers.cs" />
+    <Compile Include="Controllers\ConsoleControllers.cs" />
+    <Compile Include="Controllers\Find.cs" />
+    <Compile Include="Controllers\InsertControllers.cs" />
+    <Compile Include="Controllers\ReadController.cs" />
     <Compile Include="Models\Agent.cs" />
     <Compile Include="Models\Country.cs" />
     <Compile Include="Models\Criminal.cs" />

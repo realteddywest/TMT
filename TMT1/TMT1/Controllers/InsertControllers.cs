@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TMT1.Controllers;
 
-namespace TMT1.Views
+namespace TMT1.Controllers
 {
     public class InsertController
     {

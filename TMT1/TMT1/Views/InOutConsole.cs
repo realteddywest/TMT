@@ -22,6 +22,14 @@ namespace TMT1.Views
             Console.WriteLine("Въведи име на град: ");
             return Console.ReadLine();
         }
+        public void PrintCoutriesInfo(List<Country> coutries)
+        {
+            Console.WriteLine($"{"ID",-4}{"Coutry name",-15}");
+            foreach (var c in coutries)
+            {
+                Console.WriteLine($"{c.Id,-4}{c.Name,-15}");
+            }
+        }
 
     }
 }

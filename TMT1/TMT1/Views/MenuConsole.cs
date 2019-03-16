@@ -13,7 +13,15 @@ namespace TMT1.Views
         {
             Console.WriteLine("1 - Add Country");
             Console.WriteLine("2 - Add Town");
-            Console.Write("choose command: ");
+            Console.Write("Choose command: ");
+            return Console.ReadLine();
+
+        }
+        public string MenuRead()
+        {
+            Console.WriteLine("1 - Country info");
+            Console.WriteLine("2 - ");
+            Console.Write("Choose command: ");
             return Console.ReadLine();
 
         }

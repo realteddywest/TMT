@@ -10,15 +10,17 @@ namespace TMT1.Controllers
 {
     public class ConsoleController
     {
+        public static TMTContext context = new TMTContext();
         public static InsertController insert = new InsertController();
         public static InOutConsole inOut = new InOutConsole();
         public static MessageApp message = new MessageApp();
         public static MenuConsole menu = new MenuConsole();
+        public static ReadController read = new ReadController(context);
         public ConsoleController()
         {
-            Start();
+            Read();
         }
-        public void Start()
+        public void Create()
         {
             while (true)
             {
@@ -29,6 +31,23 @@ namespace TMT1.Controllers
                         break;
                     case "2":
                         InserIntoTowns();
+                        break;
+                    default: return;
+                        //    break;
+                }
+            }
+        }
+        public void Read()
+        {
+            while (true)
+            {
+                switch (menu.MenuRead())
+                {
+                    case "1":
+                        PrintCoutiesInfo();
+                        break;
+                    case "2":
+                        return;
                         break;
                     default: return;
                         //    break;
@@ -67,6 +86,11 @@ namespace TMT1.Controllers
                 inOut.PrintMessage(message.MessageInsertTownTrue
                     (countryName, townName));
             }
+        }
+
+        public void PrintCoutiesInfo()
+        {
+            inOut.PrintCoutriesInfo(read.CoutriesList());
         }
     }
 }
