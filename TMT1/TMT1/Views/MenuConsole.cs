@@ -20,7 +20,7 @@ namespace TMT1.Views
         public string MenuRead()
         {
             Console.WriteLine("1 - Country info");
-            Console.WriteLine("2 - ");
+            Console.WriteLine("2 - Town info");
             Console.Write("Choose command: ");
             return Console.ReadLine();
 

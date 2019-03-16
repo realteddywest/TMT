@@ -47,7 +47,7 @@ namespace TMT1.Controllers
                         PrintCoutiesInfo();
                         break;
                     case "2":
-                        return;
+                        PrintTownsInfo();                        
                         break;
                     default: return;
                         //    break;
@@ -91,6 +91,11 @@ namespace TMT1.Controllers
         public void PrintCoutiesInfo()
         {
             inOut.PrintCoutriesInfo(read.CoutriesList());
+        }
+
+        public void PrintTownsInfo()
+        {
+            inOut.PrintTownsInfo(read.TownsList());
         }
     }
 }

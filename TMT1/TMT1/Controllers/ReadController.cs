@@ -18,5 +18,10 @@ namespace TMT1.Controllers
         {
             return context.Countries.ToList();
         }
+
+        public List<Town> TownsList()
+        {
+            return context.Towns.OrderBy(t=>t.Name).ToList();
+        }
     }
 }

@@ -31,5 +31,13 @@ namespace TMT1.Views
             }
         }
 
+        public void PrintTownsInfo(List<Town> towns)
+        {
+            Console.WriteLine($"{"ID",-4}{"Town name",-15}");
+            foreach (var t in towns)
+            {
+                Console.WriteLine($"{t.Id,-4}{t.Name,-15}");
+            }
+        }
     }
 }
