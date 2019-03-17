@@ -19,9 +19,28 @@ namespace TMT1.Controllers
 
         public ConsoleController()
         {
-            Read();
+            Menu();
         }
-
+        public void Menu()
+        {
+            while (true)
+            {
+                switch (menu.Menu())
+                {
+                    case "1":
+                        Read();
+                        break;
+                    case "2":
+                        Create();
+                        break;
+                    case "3":
+                        return;
+                        break;
+                    default: return;
+                        //    break;
+                }
+            }
+        }
         //-----------------------
         public void Create()
         {
@@ -37,6 +56,9 @@ namespace TMT1.Controllers
                         break;
                     case "3":
                         InsertIntoAgents();
+                        break;
+                    case "0":
+                        Menu();
                         break;
                     default: return;
                         //    break;
@@ -62,6 +84,9 @@ namespace TMT1.Controllers
                         break;
                     case "4":
                         PrintCriminalsInfo();
+                        break;
+                    case "0":
+                        Menu();
                         break;
                     default: return;
                        

@@ -15,6 +15,7 @@ namespace TMT1.Views
             Console.WriteLine("2 - Add Town");
             Console.WriteLine("3 - Add Agent");
             Console.WriteLine("4 - Add Criminal");
+            Console.WriteLine("0 - Back");
             Console.Write("Choose command: ");
             return Console.ReadLine();
 
@@ -26,6 +27,18 @@ namespace TMT1.Views
             Console.WriteLine("2 - Towns info");
             Console.WriteLine("3 - Agents info");
             Console.WriteLine("4 - Criminals info");
+            Console.WriteLine("0 - Back");
+            Console.Write("Choose command: ");
+            return Console.ReadLine();
+
+        }
+        public string Menu()
+        {
+            Console.WriteLine("1 - Print");
+            Console.WriteLine("2 - Add");
+            Console.WriteLine("3 - ");
+            Console.WriteLine("4 - ");
+            
             Console.Write("Choose command: ");
             return Console.ReadLine();
 
