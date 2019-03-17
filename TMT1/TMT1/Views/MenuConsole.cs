@@ -20,7 +20,7 @@ namespace TMT1.Views
             return Console.ReadLine();
 
         }
-
+        //Basic menu
         public string MenuRead()
         {
             Console.WriteLine("1 - Countries info");
