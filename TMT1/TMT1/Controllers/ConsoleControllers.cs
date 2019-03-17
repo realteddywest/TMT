@@ -18,7 +18,7 @@ namespace TMT1.Controllers
         public static ReadController read = new ReadController(context);
         public ConsoleController()
         {
-            Create();
+            Read();
         }
         public void Create()
         {
@@ -51,6 +51,12 @@ namespace TMT1.Controllers
                         break;
                     case "2":
                         PrintTownsInfo();
+                        break;
+                    case "3":
+                        PrintAgentsInfo();
+                        break;
+                    case "4":
+                        PrintCriminalsInfo();
                         break;
                     default: return;
                         //    break;
@@ -100,16 +106,7 @@ namespace TMT1.Controllers
             insert.InsertIntoAgents(agentName, agentNickName, agentAge,townName,countryName);
             inOut.PrintMessage(message.MessageInsertAgentTrue());
         }
-
-        public void PrintCountriesInfo()
-        {
-            inOut.PrintCountriesInfo(read.CountriesList());
-        }
-
-        public void PrintTownsInfo()
-        {
-            inOut.PrintTownsInfo(read.TownsList());
-        }
+       
         public void InsertIntoCriminals()
         {
             string criminalName = inOut.ReadCriminalName();
@@ -122,6 +119,27 @@ namespace TMT1.Controllers
             string evilnessFactor = inOut.ReadEvilnessFactor();
             insert.InsertIntoCriminals(criminalName, criminalNickName, townName, countryName, crime, sentence, status, evilnessFactor);
             inOut.PrintMessage(message.MessageInsertCriminalTrue());
+        }
+
+       
+        public void PrintCountriesInfo()
+        {
+            inOut.PrintCountriesInfo(read.CountriesList());
+        }
+
+        public void PrintTownsInfo()
+        {
+            inOut.PrintTownsInfo(read.TownsList());
+        }
+
+        public void PrintAgentsInfo()
+        {
+            inOut.PrintAgentsInfo(read.AgentsList());
+        }
+
+        public void PrintCriminalsInfo()
+        {
+            inOut.PrintCriminalsInfo(read.CriminalsList());
         }
 
     }

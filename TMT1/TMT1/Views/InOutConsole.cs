@@ -90,5 +90,21 @@ namespace TMT1.Views
                 Console.WriteLine($"{t.Id,-4}{t.Name,-15}");
             }
         }
+        public void PrintAgentsInfo(List<Agent> agents)
+        {
+            Console.WriteLine($"{"ID",-4}{"Agent name",-15}");
+            foreach (var a in agents)
+            {
+                Console.WriteLine($"{a.Id,-4}{a.Name,-15}");
+            }
+        }
+        public void PrintCriminalsInfo(List<Criminal> criminals)
+        {
+            Console.WriteLine($"{"ID",-4}{"Town name",-15}");
+            foreach (var c in criminals)
+            {
+                Console.WriteLine($"{c.Id,-4}{c.Name,-15}");
+            }
+        }
     }
 }

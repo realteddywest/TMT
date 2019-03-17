@@ -23,5 +23,14 @@ namespace TMT1.Controllers
         {
             return context.Towns.OrderBy(t=>t.Name).ToList();
         }
+        public List<Agent> AgentsList()
+        {
+            return context.Agents.ToList();
+        }
+
+        public List<Criminal> CriminalsList()
+        {
+            return context.Criminals.ToList();
+        }
     }
 }

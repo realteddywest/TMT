@@ -21,8 +21,10 @@ namespace TMT1.Views
         }
         public string MenuRead()
         {
-            Console.WriteLine("1 - Country info");
-            Console.WriteLine("2 - Town info");
+            Console.WriteLine("1 - Countries info");
+            Console.WriteLine("2 - Towns info");
+            Console.WriteLine("3 - Agents info");
+            Console.WriteLine("4 - Criminals info");
             Console.Write("Choose command: ");
             return Console.ReadLine();
 
