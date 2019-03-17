@@ -98,6 +98,9 @@ namespace TMT1.Controllers
                     case "5":
                         PrintCriminalsInfo();
                         break;
+                    case "6":
+                        PrintFullCriminalsInfo();
+                        break;
                     case "0":
                         Menu();
                         break;
@@ -193,6 +196,11 @@ namespace TMT1.Controllers
         public void PrintFullAgentsInfo()
         {
             inOut.PrintFullAgentsInfo(read.AgentsList());
+            inOut.Line('-', Console.BufferWidth);
+        }
+        public void PrintFullCriminalsInfo()
+        {
+            inOut.PrintFullCriminalsInfo(read.CriminalsList());
             inOut.Line('-', Console.BufferWidth);
         }
     }

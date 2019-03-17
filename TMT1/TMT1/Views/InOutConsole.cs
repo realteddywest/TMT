@@ -120,7 +120,27 @@ namespace TMT1.Views
                 Console.WriteLine($"{a.Id,-4}{a.Name,-30}{a.Nickname,-17}{a.Age,-15}{a.TownId,-5}");               
             }
         }
+        public void PrintFullCriminalsInfo(List<Criminal> criminals)
+        {
+            Console.WriteLine("Info");
+            foreach (var c in criminals)
+            {
+                Line('_', Console.BufferWidth);
+                PrintFullCriminalInfo(c);
+                    }
+        }
 
+        public void PrintFullCriminalInfo(Criminal c)
+        {
+            Console.WriteLine($"ID - {c.Id}");
+            Console.WriteLine($"Name - {c.Name}");
+            Console.WriteLine($"Nickname - {c.Nickname}");
+            Console.WriteLine($"TownId - {c.TownId}");
+            Console.WriteLine($"Crime info - {c.Crime}");
+            Console.WriteLine($"Sentence - {c.Sentence}");
+            Console.WriteLine($"Status - {c.Status}");
+            Console.WriteLine($"EvilnessFactor - {c.EvilnessFactor.Name}");
+        }
 
     }
 }
