@@ -11,12 +11,17 @@ namespace TMT1.Controllers
     public class ConsoleController
     {
         public static TMTContext context = new TMTContext();
+
         public static InsertController insert = new InsertController();
+
         public static InOutConsole inOut = new InOutConsole();
+
         public static MessageApp message = new MessageApp();
+
         public static MenuConsole menu = new MenuConsole();
+
         public static ReadController read = new ReadController(context);
-       
+
         public ConsoleController()
         {
             
@@ -24,6 +29,7 @@ namespace TMT1.Controllers
             
 
         }
+
         public void Menu()
         {
             while (true)
@@ -110,8 +116,31 @@ namespace TMT1.Controllers
                 }
             }
         }
+        public void Delete()
+        {inOut.Line('-', Console.BufferWidth);
+            while (true)
+            {
+                inOut.Line('-', Console.BufferWidth);
+                switch (menu.MenuRead())
+                {
+                    case "1":
+                        //DeleteAgents();
+                        break;
+                    case "2":
+                        PrintTownsInfo();
+                        break;
+                    case "6":
+                        PrintFullCriminalsInfo();
+                        break;
+                    case "0":
+                        Menu();
+                        break;
 
-        
+                    default: return;
+
+                }
+            }
+        }
 
         //----------------------------INSERT----------------------
         public void InsertIntoCountries()
@@ -198,6 +227,7 @@ namespace TMT1.Controllers
             inOut.PrintFullAgentsInfo(read.AgentsList());
             inOut.Line('-', Console.BufferWidth);
         }
+
         public void PrintFullCriminalsInfo()
         {
             inOut.PrintFullCriminalsInfo(read.CriminalsList());

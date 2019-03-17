@@ -12,16 +12,18 @@ namespace TMT1.Views
         {
             Console.WriteLine(new string(c,Lenght));
         }
-        
+
         public string ReadCountryName()
         {
             Console.WriteLine("Enter country name: ");
             return Console.ReadLine();
         }
+
         public void PrintMessage(string message)
         {
             Console.WriteLine(message);
         }
+
         public string ReadTownName()
         {
             Console.WriteLine("Enter town name: ");
@@ -33,11 +35,13 @@ namespace TMT1.Views
             Console.WriteLine("Enter agent name: ");
             return Console.ReadLine();
         }
+
         public string ReadAgentNick()
         {
             Console.WriteLine("Enter agent nickname: ");
             return Console.ReadLine();
         }
+
         public int ReadAge()
         {
             Console.WriteLine("Enter age: ");
@@ -45,32 +49,36 @@ namespace TMT1.Views
         }
 
         //----------------------------
-
         public string ReadCriminalName()
         {
             Console.WriteLine("Enter criminal name : ");
             return Console.ReadLine();
         }
+
         public string ReadCriminalNick()
         {
             Console.WriteLine("Enter criminal nickname: ");
             return Console.ReadLine();
         }
+
         public string ReadCrime()
         {
             Console.WriteLine("Enter crime: ");
             return Console.ReadLine();
         }
+
         public string ReadSentence()
         {
             Console.WriteLine("Enter sentence: ");
             return Console.ReadLine();
         }
+
         public string ReadStatus()
         {
             Console.WriteLine("Enter status: ");
             return Console.ReadLine();
         }
+
         public string ReadEvilnessFactor()
         {
             Console.WriteLine("Enter evilness factor: ");
@@ -96,6 +104,7 @@ namespace TMT1.Views
                 Console.WriteLine($"{t.Id,-4}{t.Name,-15}");
             }
         }
+
         public void PrintAgentsInfo(List<Agent> agents)
         {
             Console.WriteLine($"{"ID",-4}{"Agent name",-15}");
@@ -104,6 +113,7 @@ namespace TMT1.Views
                 Console.WriteLine($"{a.Id,-4}{a.Name,-15}");
             }
         }
+
         public void PrintCriminalsInfo(List<Criminal> criminals)
         {
             Console.WriteLine($"{"ID",-4}{"Town name",-15}");
@@ -112,6 +122,7 @@ namespace TMT1.Views
                 Console.WriteLine($"{c.Id,-4}{c.Name,-15}");
             }
         }
+
         public void PrintFullAgentsInfo(List<Agent> agents)
         {
             Console.WriteLine($"{"ID",-4}{"Agent name",-30}{"Nickname",-17}{"Age",-15}{"TownId",-5}");
@@ -120,6 +131,7 @@ namespace TMT1.Views
                 Console.WriteLine($"{a.Id,-4}{a.Name,-30}{a.Nickname,-17}{a.Age,-15}{a.TownId,-5}");               
             }
         }
+
         public void PrintFullCriminalsInfo(List<Criminal> criminals)
         {
             Console.WriteLine("Info");
@@ -141,6 +153,12 @@ namespace TMT1.Views
             Console.WriteLine($"Status - {c.Status}");
             Console.WriteLine($"EvilnessFactor - {c.EvilnessFactor.Name}");
         }
+
+        public void DeleteAgents(List<Agent> agents)
+        {
+            Console.WriteLine("This agent was deleted");
+        }
+
 
     }
 }
