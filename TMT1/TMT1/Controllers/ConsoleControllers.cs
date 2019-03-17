@@ -16,15 +16,19 @@ namespace TMT1.Controllers
         public static MessageApp message = new MessageApp();
         public static MenuConsole menu = new MenuConsole();
         public static ReadController read = new ReadController(context);
-
+       
         public ConsoleController()
         {
+            
             Menu();
+            
+
         }
         public void Menu()
         {
             while (true)
             {
+                inOut.Line('-', Console.BufferWidth);
                 switch (menu.Menu())
                 {
                     case "1":
@@ -35,19 +39,22 @@ namespace TMT1.Controllers
                         break;
                     case "3":
                         return;
-                        break;
+
+                      break;
                     default: return;
                         //    break;
+                        
                 }
             }
         }
         //-----------------------
         public void Create()
         {
+            inOut.Line('-', Console.BufferWidth);
             while (true)
             {
                 switch (menu.MenuInsert())
-                {
+                { 
                     case "1":
                         InsertIntoCountries();
                         break;
@@ -60,15 +67,18 @@ namespace TMT1.Controllers
                     case "0":
                         Menu();
                         break;
+                        
                     default: return;
                         //    break;
                 }
             }
+            
         }
 
         //------------------------
         public void Read()
         {
+            inOut.Line('-', Console.BufferWidth);
             while (true)
             {
                 switch (menu.MenuRead())
@@ -83,18 +93,22 @@ namespace TMT1.Controllers
                         PrintAgentsInfo();
                         break;
                     case "4":
+                        PrintFullAgentsInfo();
+                        break;
+                    case "5":
                         PrintCriminalsInfo();
                         break;
                     case "0":
                         Menu();
                         break;
+                        
                     default: return;
                        
                 }
             }
         }
 
-
+        
 
         //----------------------------INSERT----------------------
         public void InsertIntoCountries()
@@ -173,8 +187,15 @@ namespace TMT1.Controllers
         public void PrintCriminalsInfo()
         {
             inOut.PrintCriminalsInfo(read.CriminalsList());
+            inOut.Line('-', Console.BufferWidth);
         }
 
+        public void PrintFullAgentsInfo()
+        {
+            inOut.PrintFullAgentsInfo(read.AgentsList());
+            inOut.Line('-', Console.BufferWidth);
+        }
     }
+   
 }
 

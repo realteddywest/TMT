@@ -8,6 +8,11 @@ namespace TMT1.Views
 {
     public class InOutConsole
     {
+        public void Line(char c,int Lenght)
+        {
+            Console.WriteLine(new string(c,Lenght));
+        }
+        
         public string ReadCountryName()
         {
             Console.WriteLine("Enter country name: ");
@@ -107,5 +112,15 @@ namespace TMT1.Views
                 Console.WriteLine($"{c.Id,-4}{c.Name,-15}");
             }
         }
+        public void PrintFullAgentsInfo(List<Agent> agents)
+        {
+            Console.WriteLine($"{"ID",-4}{"Agent name",-30}{"Nickname",-17}{"Age",-15}{"TownId",-5}");
+            foreach (var a in agents)
+            {
+                Console.WriteLine($"{a.Id,-4}{a.Name,-30}{a.Nickname,-17}{a.Age,-15}{a.TownId,-5}");               
+            }
+        }
+
+
     }
 }

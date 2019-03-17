@@ -25,8 +25,9 @@ namespace TMT1.Views
         {
             Console.WriteLine("1 - Countries info");
             Console.WriteLine("2 - Towns info");
-            Console.WriteLine("3 - Agents info");
-            Console.WriteLine("4 - Criminals info");
+            Console.WriteLine("3 - Agents basic info");
+            Console.WriteLine("4 - Agents full info");
+            Console.WriteLine("5 - Criminals info");
             Console.WriteLine("0 - Back");
             Console.Write("Choose command: ");
             return Console.ReadLine();
