@@ -16,10 +16,13 @@ namespace TMT1.Controllers
         public static MessageApp message = new MessageApp();
         public static MenuConsole menu = new MenuConsole();
         public static ReadController read = new ReadController(context);
+
         public ConsoleController()
         {
             Read();
         }
+
+        //-----------------------
         public void Create()
         {
             while (true)
@@ -40,6 +43,8 @@ namespace TMT1.Controllers
                 }
             }
         }
+
+        //------------------------
         public void Read()
         {
             while (true)
@@ -59,14 +64,14 @@ namespace TMT1.Controllers
                         PrintCriminalsInfo();
                         break;
                     default: return;
-                        //    break;
+                       
                 }
             }
         }
 
 
 
-
+        //----------------------------INSERT----------------------
         public void InsertIntoCountries()
         {
             string countryName = inOut.ReadCountryName();
@@ -80,6 +85,7 @@ namespace TMT1.Controllers
                 inOut.PrintMessage(message.MessageInsertCountryFalse(countryName));
             }
         }
+
         public void InserIntoTowns()
         {
             string countryName = inOut.ReadCountryName();
@@ -96,6 +102,7 @@ namespace TMT1.Controllers
                     (countryName, townName));
             }
         }
+
         public void InsertIntoAgents()
         {
             string agentName = inOut.ReadAgentName();
@@ -122,6 +129,7 @@ namespace TMT1.Controllers
         }
 
        
+        //------------------------------PRINT--------------------------
         public void PrintCountriesInfo()
         {
             inOut.PrintCountriesInfo(read.CountriesList());

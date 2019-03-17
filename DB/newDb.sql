@@ -123,7 +123,7 @@ insert into EvilnessFactors (Name) values
 insert into Criminals (Name, Nickname, TownId, Crime, Sentence, Status, EvilnessFactorId) values
 ('Ted Bundy', 'Lady Killer', 2, '30 killings, kidnappings, rapes', 'Execution', 'Dead - executed', 5),
 ('Pablo Escobar', 'El Doctor', 5, 'Cocaine distribution, murders', '5 years imprisonment', 'Dead - shot', 5),
-('Maria Malcheva', 'Mimi', 6, 'Larceny of 180 fluffy unicorns from a toy store', 
+('Mariya Malcheva', 'Mimi', 6, 'Larceny of 180 fluffy unicorns from a toy store', 
 '1 month with no phone and restricted access to chocolate', 'Alive', 3),
 ('Andrew Cunanan', 'N/A', 24, 'Murder of 5 people, including Gianni Versace', 'N/A', 'Dead - suicide', 5),
 ('Alish Alishov', 'Mr. Hacker', 6, 'Being too good at teaching', 'Higher wage', 'Alive', 1),

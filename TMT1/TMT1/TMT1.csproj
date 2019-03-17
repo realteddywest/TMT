@@ -59,7 +59,7 @@
     <Compile Include="Models\Country.cs" />
     <Compile Include="Models\Criminal.cs" />
     <Compile Include="Models\EvilnessFactor.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\sysdiagram.cs" />
     <Compile Include="Data\TMTContext.cs" />

@@ -27,6 +27,7 @@ namespace TMT1.Controllers
             }
 
         }
+
         public bool InsertIntoTowns(string townName, string countryName)
         {
             Town findTown = find.FindTown(countryName, townName);
@@ -57,6 +58,7 @@ namespace TMT1.Controllers
             context.SaveChanges();
             return true;
         }
+
         public bool InsertIntoCriminals(string criminalName, string criminalNickName, string townName, string countryName, string crime, string sentence, string status, string evilnessFactor)
         {
             InsertIntoTowns(townName, countryName);
