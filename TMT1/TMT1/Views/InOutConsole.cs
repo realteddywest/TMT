@@ -13,6 +13,11 @@ namespace TMT1.Views
             Console.WriteLine(new string(c,Lenght));
         }
 
+        public int ReadId()
+        {
+            Console.WriteLine("Enter id: ");
+            return int.Parse(Console.ReadLine());
+        }
         public string ReadCountryName()
         {
             Console.WriteLine("Enter country name: ");

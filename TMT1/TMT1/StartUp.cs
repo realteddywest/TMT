@@ -16,15 +16,7 @@ namespace TMT1
             TMTContext context = new TMTContext();
             DeleteController d = new DeleteController(context);
 
-            bool isRemove=d.DeleteAgent(6);
-            if (isRemove)
-            {
-                Console.WriteLine("Deleted");
-            }
-            else
-            {
-                Console.WriteLine("Not found");
-            }
+
         }
     }
 }

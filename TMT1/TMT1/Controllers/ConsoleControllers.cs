@@ -22,6 +22,8 @@ namespace TMT1.Controllers
 
         public static ReadController read = new ReadController(context);
 
+        DeleteController delete = new DeleteController(context);
+
         public ConsoleController()
         {
             
@@ -44,6 +46,8 @@ namespace TMT1.Controllers
                         Create();
                         break;
                     case "3":
+                        Delete();
+                        break;
                         return;
 
                       break;
@@ -121,16 +125,16 @@ namespace TMT1.Controllers
             while (true)
             {
                 inOut.Line('-', Console.BufferWidth);
-                switch (menu.MenuRead())
+                switch (menu.MenuDelete())
                 {
                     case "1":
-                        //DeleteAgents();
+                        DeleteAgent();
                         break;
                     case "2":
-                        PrintTownsInfo();
+                        DeleteCriminal();
                         break;
                     case "6":
-                        PrintFullCriminalsInfo();
+                        return;
                         break;
                     case "0":
                         Menu();
@@ -233,6 +237,26 @@ namespace TMT1.Controllers
             inOut.PrintFullCriminalsInfo(read.CriminalsList());
             inOut.Line('-', Console.BufferWidth);
         }
+
+       // ---------
+       public void DeleteAgent()
+        {
+            var id = inOut.ReadId();
+            bool isRemove = delete.DeleteAgent(id);
+            if (isRemove)
+            {
+                Console.WriteLine("Deleted");
+            }
+            else
+            {
+                Console.WriteLine("Not found");
+            }
+        }
+        public void DeleteCriminal()
+        {
+            Console.WriteLine(delete.DeleteCriminal());
+        }
+
     }
    
 }

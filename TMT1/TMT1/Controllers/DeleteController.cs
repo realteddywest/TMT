@@ -28,5 +28,12 @@ namespace TMT1.Controllers
                 return false;
             }
         }
+        public string DeleteCriminal()
+        {
+            
+            return "Cannot be deleted";
+                   
+        }
+        
     }
 }
