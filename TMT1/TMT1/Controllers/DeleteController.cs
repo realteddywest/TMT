@@ -9,10 +9,12 @@ namespace TMT1.Controllers
     public class DeleteController
     {
         private TMTContext context;
+
         public DeleteController(TMTContext context)
         {
             this.context = context;
         }
+        
         public bool DeleteAgent(int agentId)
         {
             var agent = context.Agents.FirstOrDefault(a => a.Id == agentId);
@@ -28,6 +30,7 @@ namespace TMT1.Controllers
                 return false;
             }
         }
+        
         public string DeleteCriminal()
         {
             

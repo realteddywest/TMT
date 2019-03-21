@@ -13,6 +13,7 @@ namespace TMT1
         {
             Criminals = new HashSet<Criminal>();
         }
+
         public Agent(string agentName,string agentNickName,int agentAge,int townId)
         {
             this.Name = agentName;
@@ -25,9 +26,11 @@ namespace TMT1
         public int Id { get; set; }
 
         [StringLength(30)]
+
         public string Name { get; set; }
 
         [StringLength(50)]
+
         public string Nickname { get; set; }
 
         public int? Age { get; set; }

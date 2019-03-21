@@ -9,6 +9,7 @@ namespace TMT1.Controllers
     public class ReadController
     {
         private TMTContext context;
+
         public ReadController(TMTContext context)
         {
             this.context = context;
@@ -23,6 +24,7 @@ namespace TMT1.Controllers
         {
             return context.Towns.OrderBy(t=>t.Name).ToList();
         }
+
         public List<Agent> AgentsList()
         {
             return context.Agents.ToList();

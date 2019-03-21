@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace TMT1.Views
 {
     public class MessageApp
-    {
+    {    
         public string MessageInsertCountryTrue(string countryName)
         {
             string message = $"{countryName} was added successfully!";
@@ -37,6 +37,7 @@ namespace TMT1.Views
             string message = $"New agent added!";
             return message;
         }
+
         public string MessageInsertCriminalTrue()
         {
             string message = $"New criminal added!";

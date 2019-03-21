@@ -9,6 +9,7 @@ namespace TMT1.Views
 {
     public class MenuConsole
     {
+        //Insert menu
         public string MenuInsert()
         {
             Console.WriteLine("1 - Add Country");
@@ -34,7 +35,7 @@ namespace TMT1.Views
             return Console.ReadLine();
 
         }
-
+        //Delete menu
         public string MenuDelete()
         {
            
@@ -45,6 +46,7 @@ namespace TMT1.Views
             return Console.ReadLine();
 
         }
+        //-------------------------------
         public string Menu()
         {
             Console.WriteLine("1 - Print");

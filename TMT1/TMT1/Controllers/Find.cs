@@ -10,14 +10,14 @@ namespace TMT1.Controllers
     {
         private static TMTContext context = new TMTContext();
 
+        //Method find country
         public Country FindCountry(string countryName)
         {
             Country find = context.Countries.FirstOrDefault(x => x.Name == countryName);
             return find;
-
-
         }
-        //Method find town
+
+         //Method find town
         public Town FindTown(string countryName, string townName)
         {
             Country findCountry = FindCountry(countryName);

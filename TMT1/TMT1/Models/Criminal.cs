@@ -9,10 +9,12 @@ namespace TMT1
     public partial class Criminal
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+
         public Criminal()
         {
             Agents = new HashSet<Agent>();
         }
+
         public Criminal(string criminalName, string criminalNickName, int townId, string crime, string sentence, string status, string evilnessFactor)
         {
             this.Name = criminalName;
@@ -29,20 +31,25 @@ namespace TMT1
         public int Id { get; set; }
 
         [StringLength(50)]
+
         public string Name { get; set; }
 
         [StringLength(50)]
+
         public string Nickname { get; set; }
 
         public int? TownId { get; set; }
 
         [StringLength(100)]
+
         public string Crime { get; set; }
 
         [StringLength(100)]
+
         public string Sentence { get; set; }
 
         [StringLength(50)]
+
         public string Status { get; set; }
 
         public int? EvilnessFactorId { get; set; }
@@ -52,6 +59,7 @@ namespace TMT1
         public virtual EvilnessFactor EvilnessFactor { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+
         public virtual ICollection<Agent> Agents { get; set; }
     }
 }

@@ -23,7 +23,7 @@ namespace TMT1.Controllers
         public static ReadController read = new ReadController(context);
 
         DeleteController delete = new DeleteController(context);
-
+        //----------Menu------------
         public ConsoleController()
         {
             
@@ -238,7 +238,7 @@ namespace TMT1.Controllers
             inOut.Line('-', Console.BufferWidth);
         }
 
-       // ---------
+       // ---------Delete---------------
        public void DeleteAgent()
         {
             var id = inOut.ReadId();
