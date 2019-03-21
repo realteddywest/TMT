@@ -17,7 +17,7 @@ namespace TMT1.Controllers
 
         public List<Country> CountriesList()
         {
-            return context.Countries.ToList();
+            return context.Countries.OrderBy(c=>c.Name).ToList();
         }
 
         public List<Town> TownsList()
