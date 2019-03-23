@@ -24,7 +24,7 @@ namespace TMT1
 
             Application.EnableVisualStyles();
 
-            Application.Run(new FormReadTownInfo());
+           Application.Run(new FormReadAgentInfo());
             
         }
     }
