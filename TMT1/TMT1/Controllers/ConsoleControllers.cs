@@ -23,14 +23,13 @@ namespace TMT1.Controllers
         public static ReadController read = new ReadController(context);
 
         DeleteController delete = new DeleteController(context);
-       
+
+        UpdateController update = new UpdateController(context);
+
         //----------Menu------------
         public ConsoleController()
         {
-            
             Menu();
-            
-
         }
 
         public void Menu()
@@ -49,12 +48,14 @@ namespace TMT1.Controllers
                     case "3":
                         Delete();
                         break;
-                        return;
+                    case "4":
+                        Update();
+                        break;
+                       
 
-                      break;
+                      
                     default: return;
-                        //    break;
-                        
+                       
                 }
             }
         }
@@ -65,7 +66,7 @@ namespace TMT1.Controllers
             while (true)
             {
                 switch (menu.MenuInsert())
-                { 
+                {
                     case "1":
                         InsertIntoCountries();
                         break;
@@ -78,15 +79,15 @@ namespace TMT1.Controllers
                     case "0":
                         Menu();
                         break;
-                        
+
                     default: return;
                         //    break;
                 }
             }
-            
+
         }
 
-        //------------------------
+ 
         public void Read()
         {
             inOut.Line('-', Console.BufferWidth);
@@ -115,14 +116,15 @@ namespace TMT1.Controllers
                     case "0":
                         Menu();
                         break;
-                        
+
                     default: return;
-                       
+
                 }
             }
         }
         public void Delete()
-        {inOut.Line('-', Console.BufferWidth);
+        {
+            inOut.Line('-', Console.BufferWidth);
             while (true)
             {
                 inOut.Line('-', Console.BufferWidth);
@@ -136,7 +138,7 @@ namespace TMT1.Controllers
                         break;
                     case "6":
                         return;
-                        break;
+                        
                     case "0":
                         Menu();
                         break;
@@ -146,7 +148,31 @@ namespace TMT1.Controllers
                 }
             }
         }
+        public void Update()
+        {
+            inOut.Line('-', Console.BufferWidth);
+            while (true)
+            {
+                inOut.Line('-', Console.BufferWidth);
+                switch (menu.MenuUpdate())
+                {
+                    case "1":
+                        UpdateAgentNickname();
+                        break;
+                    
+                        
+                    case "6":
+                        return;
+                       
+                    case "0":
+                        Menu();
+                        break;
 
+                    default: return;
+
+                }
+            }
+        }
         //----------------------------INSERT----------------------
         public void InsertIntoCountries()
         {
@@ -186,10 +212,10 @@ namespace TMT1.Controllers
             int agentAge = inOut.ReadAge();
             string townName = inOut.ReadTownName();
             string countryName = inOut.ReadCountryName();
-            insert.InsertIntoAgents(agentName, agentNickName, agentAge,townName,countryName);
+            insert.InsertIntoAgents(agentName, agentNickName, agentAge, townName, countryName);
             inOut.PrintMessage(message.MessageInsertAgentTrue());
         }
-       
+
         public void InsertIntoCriminals()
         {
             string criminalName = inOut.ReadCriminalName();
@@ -204,7 +230,7 @@ namespace TMT1.Controllers
             inOut.PrintMessage(message.MessageInsertCriminalTrue());
         }
 
-       
+
         //------------------------------PRINT--------------------------
         public void PrintCountriesInfo()
         {
@@ -239,8 +265,9 @@ namespace TMT1.Controllers
             inOut.Line('-', Console.BufferWidth);
         }
 
-       // ---------Delete---------------
-       public void DeleteAgent()
+
+        // ---------Delete---------------
+        public void DeleteAgent()
         {
             var id = inOut.ReadId();
             bool isRemove = delete.DeleteAgent(id);
@@ -258,7 +285,24 @@ namespace TMT1.Controllers
             Console.WriteLine(delete.DeleteCriminal());
         }
 
+
+        //Update
+        public void UpdateAgentNickname()
+        {
+            var id = inOut.ReadId();
+            var newNickname = inOut.ReadAgentNick();
+            bool isUpdated = update.UpdateAgentNickname(id, newNickname);
+
+            if (isUpdated)
+            {
+                Console.WriteLine("Successfully updated");
+            }
+            else
+            {
+                Console.WriteLine("Not found");
+            }
+        }
     }
-   
+
 }
 

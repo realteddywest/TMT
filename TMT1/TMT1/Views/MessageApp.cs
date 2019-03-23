@@ -44,5 +44,12 @@ namespace TMT1.Views
             return message;
         }
 
+        public string MessageUpdateSentenceTrue()
+        {
+            string message = $"Successfully updated sentence!";
+            return message;
+        }
+
+
     }
 }

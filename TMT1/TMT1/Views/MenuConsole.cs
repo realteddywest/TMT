@@ -46,13 +46,25 @@ namespace TMT1.Views
             return Console.ReadLine();
 
         }
+
+        public string MenuUpdate()
+        {
+
+            Console.WriteLine("1 - Update agent nickname");
+            Console.WriteLine("2 - ");
+            Console.WriteLine("0 - Back");
+            Console.Write("Choose command: ");
+            return Console.ReadLine();
+
+        }
+
         //-------------------------------
         public string Menu()
         {
             Console.WriteLine("1 - Print");
             Console.WriteLine("2 - Add");
             Console.WriteLine("3 - Delete");
-            Console.WriteLine("4 - ");
+            Console.WriteLine("4 - Update");
             
             Console.Write("Choose command: ");
             return Console.ReadLine();

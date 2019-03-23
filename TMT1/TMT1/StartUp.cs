@@ -11,15 +11,15 @@ namespace TMT1
     {
         static void Main(string[] args)
         {
-          // ConsoleController controller = new ConsoleController();
+           ConsoleController controller = new ConsoleController();
 
             TMTContext context = new TMTContext();
             DeleteController d = new DeleteController(context);
             UpdateController u = new UpdateController(context);
             // u.UpdateCriminalStatus(9, "Dead");
             // u.UpdateCriminalSentence(9, "15 life terms of imprisonment - 957 years total");
-            u.UpdateAgentNickname(2, "Teddy West");
-
+            //u.UpdateAgentNickname(13, "Coco");
+            
         }
     }
 }

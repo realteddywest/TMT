@@ -29,7 +29,8 @@ namespace TMT1.Controllers
             }
 
         }
-        public bool GrwoAgent(int id)
+
+        public bool GrowAgent(int id)
         {
             var agent = context.Agents.FirstOrDefault(a => a.Id == id);
             if (agent != null)
@@ -59,6 +60,7 @@ namespace TMT1.Controllers
                 return false;
             }
         }
+
         public bool UpdateCriminalSentence(int id, string newSentence)
         {
             var criminal = context.Criminals.FirstOrDefault(c => c.Id == id);
