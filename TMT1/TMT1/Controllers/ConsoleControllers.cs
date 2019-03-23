@@ -12,7 +12,7 @@ namespace TMT1.Controllers
     {
         public static TMTContext context = new TMTContext();
 
-        public static InsertController insert = new InsertController();
+        public static InsertController insert = new InsertController(context);
 
         public static InOutConsole inOut = new InOutConsole();
 

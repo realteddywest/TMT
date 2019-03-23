@@ -55,6 +55,7 @@
     <Compile Include="Controllers\DeleteController.cs" />
     <Compile Include="Controllers\InsertControllers.cs" />
     <Compile Include="Controllers\ReadController.cs" />
+    <Compile Include="Controllers\UpdateController.cs" />
     <Compile Include="Models\Agent.cs" />
     <Compile Include="Models\Country.cs" />
     <Compile Include="Models\Criminal.cs" />

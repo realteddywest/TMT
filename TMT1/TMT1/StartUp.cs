@@ -11,11 +11,12 @@ namespace TMT1
     {
         static void Main(string[] args)
         {
-           ConsoleController controller = new ConsoleController();
+          // ConsoleController controller = new ConsoleController();
 
             TMTContext context = new TMTContext();
             DeleteController d = new DeleteController(context);
-
+            UpdateController u = new UpdateController(context);
+            u.UpdateAgentNickName(3, "Pepi");
 
         }
     }
