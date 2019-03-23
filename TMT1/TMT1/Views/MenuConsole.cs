@@ -35,27 +35,24 @@ namespace TMT1.Views
             return Console.ReadLine();
 
         }
-        //Delete menu
+
+        //------------------------------MENU DELETE & UPDATE--------------------------
         public string MenuDelete()
-        {
-           
+        {          
             Console.WriteLine("1 - Delete agent");
             Console.WriteLine("2 - Delete criminal");
             Console.WriteLine("0 - Back");
             Console.Write("Choose command: ");
             return Console.ReadLine();
-
         }
 
         public string MenuUpdate()
         {
-
             Console.WriteLine("1 - Update agent nickname");
             Console.WriteLine("2 - ");
             Console.WriteLine("0 - Back");
             Console.Write("Choose command: ");
             return Console.ReadLine();
-
         }
 
         //-------------------------------

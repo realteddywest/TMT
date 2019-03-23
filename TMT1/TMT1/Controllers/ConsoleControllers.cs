@@ -50,15 +50,13 @@ namespace TMT1.Controllers
                         break;
                     case "4":
                         Update();
-                        break;
-                       
-
-                      
+                        break;                     
                     default: return;
                        
                 }
             }
         }
+
         //-----------------------
         public void Create()
         {
@@ -79,14 +77,11 @@ namespace TMT1.Controllers
                     case "0":
                         Menu();
                         break;
-
                     default: return;
-                        //    break;
                 }
             }
 
         }
-
  
         public void Read()
         {
@@ -116,12 +111,11 @@ namespace TMT1.Controllers
                     case "0":
                         Menu();
                         break;
-
                     default: return;
-
                 }
             }
         }
+
         public void Delete()
         {
             inOut.Line('-', Console.BufferWidth);
@@ -135,19 +129,15 @@ namespace TMT1.Controllers
                         break;
                     case "2":
                         DeleteCriminal();
-                        break;
-                    case "6":
-                        return;
-                        
+                        break;                     
                     case "0":
                         Menu();
                         break;
-
                     default: return;
-
                 }
             }
         }
+
         public void Update()
         {
             inOut.Line('-', Console.BufferWidth);
@@ -158,21 +148,15 @@ namespace TMT1.Controllers
                 {
                     case "1":
                         UpdateAgentNickname();
-                        break;
-                    
-                        
-                    case "6":
-                        return;
-                       
+                        break;                       
                     case "0":
                         Menu();
                         break;
-
                     default: return;
-
                 }
             }
         }
+
         //----------------------------INSERT----------------------
         public void InsertIntoCountries()
         {
@@ -265,8 +249,7 @@ namespace TMT1.Controllers
             inOut.Line('-', Console.BufferWidth);
         }
 
-
-        // ---------Delete---------------
+        //------------------------------DELETE--------------------------
         public void DeleteAgent()
         {
             var id = inOut.ReadId();
@@ -280,13 +263,13 @@ namespace TMT1.Controllers
                 Console.WriteLine("Not found");
             }
         }
+
         public void DeleteCriminal()
         {
             Console.WriteLine(delete.DeleteCriminal());
         }
 
-
-        //Update
+        //------------------------------UPDATE--------------------------
         public void UpdateAgentNickname()
         {
             var id = inOut.ReadId();
@@ -295,6 +278,7 @@ namespace TMT1.Controllers
 
             if (isUpdated)
             {
+                inOut.Line(' ', Console.BufferWidth);
                 Console.WriteLine("Successfully updated");
             }
             else
