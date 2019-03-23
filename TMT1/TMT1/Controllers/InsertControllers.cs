@@ -9,9 +9,14 @@ namespace TMT1.Controllers
 {
     public class InsertController
     {
-        private static TMTContext context = new TMTContext();
+        private TMTContext context ;
+        private ReadController find;
 
-        private static Find find = new Find();
+        public InsertController(TMTContext context)
+        {
+            this.context = context;
+            this.find = new ReadController(context);
+        }    
 
         public bool InsertIntoCountries(string countryName)
         {

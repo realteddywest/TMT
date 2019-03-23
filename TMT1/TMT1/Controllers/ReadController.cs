@@ -34,5 +34,28 @@ namespace TMT1.Controllers
         {
             return context.Criminals.ToList();
         }
+
+        public Country FindCountry(string countryName)
+        {
+            Country find = context.Countries.FirstOrDefault(x => x.Name == countryName);
+            return find;
+        }
+
+        //Method find town
+        public Town FindTown(string countryName, string townName)
+        {
+            Country findCountry = FindCountry(countryName);
+            if (findCountry == null)
+            {
+                return null;
+            }
+            else
+            {
+                Town find = context.Towns.Where(x => x.Name == townName && x.Country.Name ==
+                countryName).
+                FirstOrDefault();
+                return find;
+            }
+        }
     }
 }
