@@ -20,6 +20,7 @@ namespace TMT1.Forms
         public FormReadTownInfo()
         {
             InitializeComponent();
+            EnableOrDesable(false);
         }
 
         private void FormReadTownInfo_Load(object sender, EventArgs e)
@@ -59,6 +60,41 @@ namespace TMT1.Forms
                 labelCountryName.Text = towns[i].Country.Name;
                 labelTownName.Text = towns[i].Name;
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var find = towns.FirstOrDefault(t => t.Name == textBox1.Text);
+            if (find!=null)
+            {
+                labelCountryName.Text = find.Country.Name;
+                labelTownName.Text = find.Name;
+            }
+            else
+            {
+                labelCountryName.Text = "Not found!";
+                labelTownName.Text = "Not found!";
+            }
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                EnableOrDesable(true);
+            }
+            else
+            {
+                EnableOrDesable(false);
+            }
+        }
+
+        private void EnableOrDesable(bool trueOrFalse)
+        {
+            button1.Enabled = !trueOrFalse;
+            button2.Enabled = !trueOrFalse;
+            button3.Enabled = trueOrFalse;
+            textBox1.Enabled = trueOrFalse;
         }
     }
 }
