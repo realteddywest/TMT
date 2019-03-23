@@ -1,0 +1,64 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using TMT1.Controllers;
+
+namespace TMT1.Forms
+{
+    public partial class FormReadTownInfo : Form
+    {
+        private static TMTContext context = new TMTContext();
+        private static ReadController read = new ReadController(context);
+        private List<Town> towns = read.TownsList();
+        int i = 0;
+        public FormReadTownInfo()
+        {
+            InitializeComponent();
+        }
+
+        private void FormReadTownInfo_Load(object sender, EventArgs e)
+        {
+            labelCountryName.Text = towns.First().Country.Name;
+            labelTownName.Text = towns.First().Name;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            i--;
+            if (i <= 0)
+            {
+                i = towns.Count - 1;
+                labelCountryName.Text = towns[i].Country.Name;
+                labelTownName.Text = towns[i].Name;
+            }
+            else
+            {
+                labelCountryName.Text = towns[i].Country.Name;
+                labelTownName.Text = towns[i].Name;
+            }
+           
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            i++;
+            if (i >= towns.Count-1)
+            {
+                i = 0;
+                labelCountryName.Text = towns[i].Country.Name;
+                labelTownName.Text = towns[i].Name;
+            }
+            else
+            {
+                labelCountryName.Text = towns[i].Country.Name;
+                labelTownName.Text = towns[i].Name;
+            }
+        }
+    }
+}
