@@ -16,7 +16,7 @@ namespace TMT1
             TMTContext context = new TMTContext();
             DeleteController d = new DeleteController(context);
             UpdateController u = new UpdateController(context);
-            u.UpdateAgentNickName(3, "Pepi");
+            u.GrwoAgent(2);
 
         }
     }
