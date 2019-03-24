@@ -70,12 +70,6 @@
     <Compile Include="Forms\FormReadAgentInfo.Designer.cs">
       <DependentUpon>FormReadAgentInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormReadCriminalInfo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FormReadCriminalInfo.Designer.cs">
-      <DependentUpon>FormReadCriminalInfo.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FormReadTownInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,9 +100,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormReadAgentInfo.resx">
       <DependentUpon>FormReadAgentInfo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormReadCriminalInfo.resx">
-      <DependentUpon>FormReadCriminalInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormReadTownInfo.resx">
       <DependentUpon>FormReadTownInfo.cs</DependentUpon>
