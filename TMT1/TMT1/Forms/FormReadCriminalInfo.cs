@@ -44,7 +44,14 @@ namespace TMT1.Forms
 
         private void FormReadCriminalInfo_Load(object sender, EventArgs e)
         {
-
+            labelCriminalID.Text = criminals[i].Id.ToString();
+            labelCriminalName.Text = criminals[i].Name;
+            labelCriminalNickName.Text = criminals[i].Nickname;
+            labelCriminalTownId.Text = criminals[i].TownId.ToString();
+            labelCriminalCrime.Text = criminals[i].Crime.ToString();
+            labelCriminalSentence.Text = criminals[i].Sentence.ToString();
+            labelCriminalStatus.Text = criminals[i].Status.ToString();
+            labelCriminalEvilnessFactor.Text = criminals[i].EvilnessFactor.ToString();
         }
 
         private void CriminalID_Click(object sender, EventArgs e)

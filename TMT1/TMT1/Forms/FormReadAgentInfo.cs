@@ -130,5 +130,10 @@ namespace TMT1.Forms
             labelAgentTownId.Text = agents[i].TownId.ToString();
 
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
