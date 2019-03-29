@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.CriminalID = new System.Windows.Forms.Label();
-            this.Name = new System.Windows.Forms.Label();
+            this.Naem = new System.Windows.Forms.Label();
             this.NickName = new System.Windows.Forms.Label();
             this.TownId = new System.Windows.Forms.Label();
             this.Crime = new System.Windows.Forms.Label();
@@ -66,14 +66,14 @@
             // 
             // Name
             // 
-            this.Name.AutoSize = true;
-            this.Name.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Name.Location = new System.Drawing.Point(43, 79);
-            this.Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Name.Name = "Name";
-            this.Name.Size = new System.Drawing.Size(63, 24);
-            this.Name.TabIndex = 1;
-            this.Name.Text = "Name";
+            this.Naem.AutoSize = true;
+            this.Naem.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Naem.Location = new System.Drawing.Point(43, 79);
+            this.Naem.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Naem.Name = "Name";
+            this.Naem.Size = new System.Drawing.Size(63, 24);
+            this.Naem.TabIndex = 1;
+            this.Naem.Text = "Name";
             // 
             // NickName
             // 
@@ -295,13 +295,13 @@
             this.Controls.Add(this.Crime);
             this.Controls.Add(this.TownId);
             this.Controls.Add(this.NickName);
-            this.Controls.Add(this.Name);
+            this.Controls.Add(this.Naem);
             this.Controls.Add(this.CriminalID);
             this.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "FormReadCriminalInfo";
-            this.Text = "FormReadCriminalInfo";
-            this.Load += new System.EventHandler(this.FormReadCriminalInfo_Load);
+           // this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+          //  this.Name = "FormReadCriminalInfo";
+          //  this.Text = "FormReadCriminalInfo";
+         //   this.Load += new System.EventHandler(this.FormReadCriminalInfo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,7 +310,7 @@
         #endregion
 
         private System.Windows.Forms.Label CriminalID;
-        private System.Windows.Forms.Label Name;
+        private System.Windows.Forms.Label Naem;
         private System.Windows.Forms.Label NickName;
         private System.Windows.Forms.Label TownId;
         private System.Windows.Forms.Label Crime;
