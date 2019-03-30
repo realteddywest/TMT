@@ -26,10 +26,11 @@ namespace TMT1
 
             
             Application.EnableVisualStyles();
-           // Application.Run(new FormReadCriminalInfo());
-         //  Application.Run(new FormReadAgentInfo());
-          // Application.Run(new FormReadTownInfo());
+            // Application.Run(new FormReadCriminalInfo());
+            //  Application.Run(new FormReadAgentInfo());
+            // Application.Run(new FormReadTownInfo());
             //  Application.Run(new FormReadCriminalInfo());
+            Application.Run(new FormAddNewCriminal());
 
         }
     }

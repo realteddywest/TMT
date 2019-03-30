@@ -13,6 +13,8 @@ namespace TMT1.Controllers
         {
             this.context = context;
         }
+       
+        // Update agents  info
 
         public bool UpdateAgentNickname(int id, string newNickname)
         {
@@ -45,6 +47,8 @@ namespace TMT1.Controllers
             }
 
         }
+         
+        // Update criminls info
 
         public bool UpdateCriminalStatus(int id, string newStatus)
         {
