@@ -13,9 +13,11 @@ namespace TMT1
     {
         static void Main(string[] args)
         {
-           ConsoleController controller = new ConsoleController();
+      
+               //  ConsoleController controller = new ConsoleController();
 
             TMTContext context = new TMTContext();
+           
             // DeleteController d = new DeleteController(context);
             //  UpdateController u = new UpdateController(context);
             // u.UpdateCriminalStatus(9, "Dead");
@@ -25,10 +27,10 @@ namespace TMT1
             
             Application.EnableVisualStyles();
            // Application.Run(new FormReadCriminalInfo());
-           // Application.Run(new FormReadTownInfo());
+         //  Application.Run(new FormReadAgentInfo());
+          // Application.Run(new FormReadTownInfo());
+            //  Application.Run(new FormReadCriminalInfo());
 
-         //  Application.Run(new FormReadCriminalInfo());
-            
         }
     }
 }
