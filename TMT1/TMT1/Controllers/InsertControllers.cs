@@ -18,6 +18,7 @@ namespace TMT1.Controllers
             this.find = new ReadController(context);
         }    
 
+        // INSERT COUNTRIES
         public bool InsertIntoCountries(string countryName)
         {
             if (find.FindCountry(countryName) == null)
@@ -33,6 +34,7 @@ namespace TMT1.Controllers
 
         }
 
+        //INSERT TOWNS
         public bool InsertIntoTowns(string townName, string countryName)
         {
             Town findTown = find.FindTown(countryName, townName);
@@ -54,6 +56,7 @@ namespace TMT1.Controllers
             }
         }
 
+        //INSERT AGENTS
         public bool InsertIntoAgents(string agentName, string agentNickName, int agentAge, string townName, string countryName)
         {
             InsertIntoTowns(townName, countryName);
@@ -64,6 +67,7 @@ namespace TMT1.Controllers
             return true;
         }
 
+        //INSERT CRIMINALS
         public bool InsertIntoCriminals(string criminalName, string criminalNickName, string townName, string countryName, string crime, string sentence, string status, string evilnessFactor)
         {
             InsertIntoTowns(townName, countryName);

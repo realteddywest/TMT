@@ -20,6 +20,7 @@ namespace TMT1.Views
             string message = $"{countryName} already exists!";
             return message;
         }
+
         public string MessageInsertTownTrue(string countryName, string townName)
         {
             string message = $"To country'{countryName}' was added town named '{townName}'!";

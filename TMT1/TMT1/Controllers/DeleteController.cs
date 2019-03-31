@@ -14,7 +14,7 @@ namespace TMT1.Controllers
         {
             this.context = context;
         }
-        
+        //DELETE AGENTS
         public bool DeleteAgent(int agentId)
         {
             var agent = context.Agents.FirstOrDefault(a => a.Id == agentId);
@@ -31,6 +31,7 @@ namespace TMT1.Controllers
             }
         }
         
+        //DELETE CRIMINALS
         public string DeleteCriminal()
         {
             

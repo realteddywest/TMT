@@ -18,16 +18,13 @@ namespace TMT1.Views
             Console.WriteLine("Enter id: ");
             return int.Parse(Console.ReadLine());
         }
+       
+        //Read names
 
         public string ReadCountryName()
         {
             Console.WriteLine("Enter country name: ");
             return Console.ReadLine();
-        }
-
-        public void PrintMessage(string message)
-        {
-            Console.WriteLine(message);
         }
 
         public string ReadTownName()
@@ -54,7 +51,9 @@ namespace TMT1.Views
             return int.Parse(Console.ReadLine());
         }
 
-        //----------------------------
+
+        //Read criminals info
+
         public string ReadCriminalName()
         {
             Console.WriteLine("Enter criminal name : ");
@@ -92,7 +91,8 @@ namespace TMT1.Views
         }
 
 
-        //--------------------------------
+        //Print info
+
         public void PrintCountriesInfo(List<Country> coutries)
         {
             Console.WriteLine($"{"ID",-4}{"Country name",-15}");
@@ -129,6 +129,9 @@ namespace TMT1.Views
             }
         }
 
+
+        //Print full info
+
         public void PrintFullAgentsInfo(List<Agent> agents)
         {
             Console.WriteLine($"{"ID",-4}{"Agent name",-30}{"Nickname",-17}{"Age",-15}{"TownId",-5}");
@@ -145,9 +148,9 @@ namespace TMT1.Views
             {
                 Line('_', Console.BufferWidth);
                 PrintFullCriminalInfo(c);
-                    }
+            }
         }
-
+         
         public void PrintFullCriminalInfo(Criminal c)
         {
             Console.WriteLine($"ID - {c.Id}");
@@ -160,12 +163,21 @@ namespace TMT1.Views
             Console.WriteLine($"EvilnessFactor - {c.EvilnessFactor.Name}");
         }
 
+
+        //Delete Agents
+
         public void DeleteAgents(List<Agent> agents)
         {
             Console.WriteLine("This agent was deleted");
         }
-
        
+
+        //Print Messages
+
+        public void PrintMessage(string message)
+        {
+            Console.WriteLine(message);
+        }
 
     }
 }

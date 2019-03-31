@@ -9,7 +9,8 @@ namespace TMT1.Views
 {
     public class MenuConsole
     {
-        //Insert menu
+        //------------------------------Insert menu------------------------------
+
         public string MenuInsert()
         {
             Console.WriteLine("1 - Add Country");
@@ -21,7 +22,9 @@ namespace TMT1.Views
             return Console.ReadLine();
 
         }
-        //Basic menu
+
+        //------------------------------Basic menu------------------------------
+
         public string MenuRead()
         {
             Console.WriteLine("1 - Countries info");
@@ -36,7 +39,7 @@ namespace TMT1.Views
 
         }
 
-        //------------------------------MENU DELETE & UPDATE--------------------------
+        //------------------------------Menu Delete------------------------------
         public string MenuDelete()
         {          
             Console.WriteLine("1 - Delete agent");
@@ -46,6 +49,7 @@ namespace TMT1.Views
             return Console.ReadLine();
         }
 
+        //------------------------------Menu Update------------------------------
         public string MenuUpdate()
         {
             Console.WriteLine("1 - Update agent nickname");
@@ -55,7 +59,7 @@ namespace TMT1.Views
             return Console.ReadLine();
         }
 
-        //-------------------------------
+        //-------------------------------Menu------------------------------
         public string Menu()
         {
             Console.WriteLine("1 - Print");
