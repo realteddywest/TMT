@@ -64,9 +64,9 @@
             this.labelNickName.Location = new System.Drawing.Point(46, 81);
             this.labelNickName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelNickName.Name = "labelNickName";
-            this.labelNickName.Size = new System.Drawing.Size(103, 24);
+            this.labelNickName.Size = new System.Drawing.Size(100, 24);
             this.labelNickName.TabIndex = 1;
-            this.labelNickName.Text = "NickName";
+            this.labelNickName.Text = "Nickname";
             // 
             // labeltownId
             // 
@@ -75,15 +75,15 @@
             this.labeltownId.Location = new System.Drawing.Point(46, 128);
             this.labeltownId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labeltownId.Name = "labeltownId";
-            this.labeltownId.Size = new System.Drawing.Size(73, 24);
+            this.labeltownId.Size = new System.Drawing.Size(76, 24);
             this.labeltownId.TabIndex = 2;
-            this.labeltownId.Text = "TownId";
+            this.labeltownId.Text = "Town Id";
             // 
             // labelCrime
             // 
             this.labelCrime.AutoSize = true;
             this.labelCrime.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelCrime.Location = new System.Drawing.Point(46, 171);
+            this.labelCrime.Location = new System.Drawing.Point(46, 174);
             this.labelCrime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCrime.Name = "labelCrime";
             this.labelCrime.Size = new System.Drawing.Size(64, 24);
@@ -94,7 +94,7 @@
             // 
             this.labelSentence.AutoSize = true;
             this.labelSentence.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelSentence.Location = new System.Drawing.Point(46, 218);
+            this.labelSentence.Location = new System.Drawing.Point(46, 221);
             this.labelSentence.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSentence.Name = "labelSentence";
             this.labelSentence.Size = new System.Drawing.Size(94, 24);
@@ -119,9 +119,9 @@
             this.labelEvilnessFactor.Location = new System.Drawing.Point(46, 315);
             this.labelEvilnessFactor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelEvilnessFactor.Name = "labelEvilnessFactor";
-            this.labelEvilnessFactor.Size = new System.Drawing.Size(144, 24);
+            this.labelEvilnessFactor.Size = new System.Drawing.Size(147, 24);
             this.labelEvilnessFactor.TabIndex = 6;
-            this.labelEvilnessFactor.Text = "EvilnessFactor";
+            this.labelEvilnessFactor.Text = "Evilness Factor";
             // 
             // button1
             // 
@@ -156,14 +156,14 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(287, 175);
+            this.textBox4.Location = new System.Drawing.Point(287, 178);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(236, 22);
             this.textBox4.TabIndex = 11;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(287, 222);
+            this.textBox5.Location = new System.Drawing.Point(287, 225);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(236, 22);
             this.textBox5.TabIndex = 12;
@@ -186,7 +186,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(588, 481);
+            this.ClientSize = new System.Drawing.Size(575, 480);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
