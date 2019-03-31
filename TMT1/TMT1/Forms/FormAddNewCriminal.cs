@@ -16,5 +16,10 @@ namespace TMT1.Forms
         {
             InitializeComponent();
         }
+
+        private void labelName_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
