@@ -111,15 +111,7 @@ namespace TMT1.Forms
                 EnableOrDesable(false);
             }
         }
-
-        private void EnableOrDesable(bool trueOrFalse)
-        {
-            button1.Enabled = !trueOrFalse;
-            button2.Enabled = !trueOrFalse;
-            button3.Enabled = trueOrFalse;
-            textBox1.Enabled = trueOrFalse;
-        }
-
+ 
         private void FormReadAgentInfo_Load(object sender, EventArgs e)
         {
 
@@ -134,6 +126,13 @@ namespace TMT1.Forms
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+        private void EnableOrDesable(bool trueOrFalse)
+        {
+            button1.Enabled = !trueOrFalse;
+            button2.Enabled = !trueOrFalse;
+            button3.Enabled = trueOrFalse;
+            textBox1.Enabled = trueOrFalse;
         }
     }
 }

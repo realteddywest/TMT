@@ -24,14 +24,6 @@ namespace TMT1.Forms
             EnableOrDesable(false);
         }
 
-        private void EnableOrDesable(bool trueOrFalse)
-        {
-            button1.Enabled = !trueOrFalse;
-            button2.Enabled = !trueOrFalse;
-            button3.Enabled = trueOrFalse;
-            textBox1.Enabled = trueOrFalse;
-        }
-
         private void label3_Click(object sender, EventArgs e)
         {
 
@@ -41,6 +33,7 @@ namespace TMT1.Forms
         {
 
         }
+
 
         private void FormReadCriminalInfo_Load(object sender, EventArgs e)
         {
@@ -58,6 +51,8 @@ namespace TMT1.Forms
         {
 
         }
+
+        //------------------------------Button1 & Button2------------------------------
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -115,6 +110,20 @@ namespace TMT1.Forms
                 labelCriminalStatus.Text = criminals[i].Status.ToString();
                 labelCriminalEvilnessFactor.Text = criminals[i].EvilnessFactor.ToString();
             }
+        }
+
+
+        private void FormReadCriminalInfo_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EnableOrDesable(bool trueOrFalse)
+        {
+            button1.Enabled = !trueOrFalse;
+            button2.Enabled = !trueOrFalse;
+            button3.Enabled = trueOrFalse;
+            textBox1.Enabled = trueOrFalse;
         }
     }
 }

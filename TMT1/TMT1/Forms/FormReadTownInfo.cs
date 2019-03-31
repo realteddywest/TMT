@@ -17,6 +17,7 @@ namespace TMT1.Forms
         private static ReadController read = new ReadController(context);
         private List<Town> towns = read.TownsList();
         int i = 0;
+
         public FormReadTownInfo()
         {
             InitializeComponent();
@@ -28,6 +29,8 @@ namespace TMT1.Forms
             labelCountryName.Text = towns.First().Country.Name;
             labelTownName.Text = towns.First().Name;
         }
+
+        //------------------------------Button1 & Button2 & Button3------------------------------
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -77,6 +80,9 @@ namespace TMT1.Forms
             }
         }
 
+
+        //------------------------------Checkbox------------------------------
+
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox1.Checked)
@@ -88,6 +94,7 @@ namespace TMT1.Forms
                 EnableOrDesable(false);
             }
         }
+
 
         private void EnableOrDesable(bool trueOrFalse)
         {

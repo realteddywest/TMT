@@ -59,19 +59,19 @@
             this.CriminalID.Location = new System.Drawing.Point(43, 34);
             this.CriminalID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CriminalID.Name = "CriminalID";
-            this.CriminalID.Size = new System.Drawing.Size(29, 24);
+            this.CriminalID.Size = new System.Drawing.Size(24, 19);
             this.CriminalID.TabIndex = 0;
             this.CriminalID.Text = "ID";
             this.CriminalID.Click += new System.EventHandler(this.CriminalID_Click);
             // 
-            // Name
+            // Naem
             // 
             this.Naem.AutoSize = true;
             this.Naem.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Naem.Location = new System.Drawing.Point(43, 79);
             this.Naem.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Naem.Name = "Name";
-            this.Naem.Size = new System.Drawing.Size(63, 24);
+            this.Naem.Name = "Naem";
+            this.Naem.Size = new System.Drawing.Size(52, 19);
             this.Naem.TabIndex = 1;
             this.Naem.Text = "Name";
             // 
@@ -82,7 +82,7 @@
             this.NickName.Location = new System.Drawing.Point(43, 127);
             this.NickName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NickName.Name = "NickName";
-            this.NickName.Size = new System.Drawing.Size(100, 24);
+            this.NickName.Size = new System.Drawing.Size(81, 19);
             this.NickName.TabIndex = 2;
             this.NickName.Text = "Nickname";
             this.NickName.Click += new System.EventHandler(this.label3_Click);
@@ -94,7 +94,7 @@
             this.TownId.Location = new System.Drawing.Point(43, 173);
             this.TownId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TownId.Name = "TownId";
-            this.TownId.Size = new System.Drawing.Size(73, 24);
+            this.TownId.Size = new System.Drawing.Size(59, 19);
             this.TownId.TabIndex = 3;
             this.TownId.Text = "TownId";
             // 
@@ -105,7 +105,7 @@
             this.Crime.Location = new System.Drawing.Point(43, 218);
             this.Crime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Crime.Name = "Crime";
-            this.Crime.Size = new System.Drawing.Size(64, 24);
+            this.Crime.Size = new System.Drawing.Size(53, 19);
             this.Crime.TabIndex = 4;
             this.Crime.Text = "Crime";
             this.Crime.Click += new System.EventHandler(this.label5_Click);
@@ -117,7 +117,7 @@
             this.Sentence.Location = new System.Drawing.Point(43, 261);
             this.Sentence.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Sentence.Name = "Sentence";
-            this.Sentence.Size = new System.Drawing.Size(94, 24);
+            this.Sentence.Size = new System.Drawing.Size(77, 19);
             this.Sentence.TabIndex = 5;
             this.Sentence.Text = "Sentence";
             // 
@@ -128,7 +128,7 @@
             this.Status.Location = new System.Drawing.Point(43, 307);
             this.Status.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Status.Name = "Status";
-            this.Status.Size = new System.Drawing.Size(68, 24);
+            this.Status.Size = new System.Drawing.Size(55, 19);
             this.Status.TabIndex = 6;
             this.Status.Text = "Status";
             // 
@@ -137,7 +137,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(314, 51);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 24);
+            this.label1.Size = new System.Drawing.Size(0, 19);
             this.label1.TabIndex = 7;
             // 
             // EvilnessFactor
@@ -146,7 +146,7 @@
             this.EvilnessFactor.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.EvilnessFactor.Location = new System.Drawing.Point(43, 354);
             this.EvilnessFactor.Name = "EvilnessFactor";
-            this.EvilnessFactor.Size = new System.Drawing.Size(147, 24);
+            this.EvilnessFactor.Size = new System.Drawing.Size(120, 19);
             this.EvilnessFactor.TabIndex = 8;
             this.EvilnessFactor.Text = "Evilness Factor";
             // 
@@ -155,7 +155,7 @@
             this.labelCriminalID.AutoSize = true;
             this.labelCriminalID.Location = new System.Drawing.Point(247, 34);
             this.labelCriminalID.Name = "labelCriminalID";
-            this.labelCriminalID.Size = new System.Drawing.Size(20, 24);
+            this.labelCriminalID.Size = new System.Drawing.Size(17, 19);
             this.labelCriminalID.TabIndex = 9;
             this.labelCriminalID.Text = "-";
             // 
@@ -164,7 +164,7 @@
             this.labelCriminalName.AutoSize = true;
             this.labelCriminalName.Location = new System.Drawing.Point(247, 79);
             this.labelCriminalName.Name = "labelCriminalName";
-            this.labelCriminalName.Size = new System.Drawing.Size(20, 24);
+            this.labelCriminalName.Size = new System.Drawing.Size(17, 19);
             this.labelCriminalName.TabIndex = 10;
             this.labelCriminalName.Text = "-";
             // 
@@ -173,7 +173,7 @@
             this.labelCriminalNickName.AutoSize = true;
             this.labelCriminalNickName.Location = new System.Drawing.Point(247, 127);
             this.labelCriminalNickName.Name = "labelCriminalNickName";
-            this.labelCriminalNickName.Size = new System.Drawing.Size(20, 24);
+            this.labelCriminalNickName.Size = new System.Drawing.Size(17, 19);
             this.labelCriminalNickName.TabIndex = 11;
             this.labelCriminalNickName.Text = "-";
             // 
@@ -182,7 +182,7 @@
             this.labelCriminalTownId.AutoSize = true;
             this.labelCriminalTownId.Location = new System.Drawing.Point(247, 173);
             this.labelCriminalTownId.Name = "labelCriminalTownId";
-            this.labelCriminalTownId.Size = new System.Drawing.Size(20, 24);
+            this.labelCriminalTownId.Size = new System.Drawing.Size(17, 19);
             this.labelCriminalTownId.TabIndex = 12;
             this.labelCriminalTownId.Text = "-";
             // 
@@ -191,7 +191,7 @@
             this.labelCriminalCrime.AutoSize = true;
             this.labelCriminalCrime.Location = new System.Drawing.Point(247, 218);
             this.labelCriminalCrime.Name = "labelCriminalCrime";
-            this.labelCriminalCrime.Size = new System.Drawing.Size(20, 24);
+            this.labelCriminalCrime.Size = new System.Drawing.Size(17, 19);
             this.labelCriminalCrime.TabIndex = 13;
             this.labelCriminalCrime.Text = "-";
             // 
@@ -200,7 +200,7 @@
             this.labelCriminalSentence.AutoSize = true;
             this.labelCriminalSentence.Location = new System.Drawing.Point(247, 261);
             this.labelCriminalSentence.Name = "labelCriminalSentence";
-            this.labelCriminalSentence.Size = new System.Drawing.Size(20, 24);
+            this.labelCriminalSentence.Size = new System.Drawing.Size(17, 19);
             this.labelCriminalSentence.TabIndex = 14;
             this.labelCriminalSentence.Text = "-";
             // 
@@ -209,7 +209,7 @@
             this.labelCriminalStatus.AutoSize = true;
             this.labelCriminalStatus.Location = new System.Drawing.Point(247, 307);
             this.labelCriminalStatus.Name = "labelCriminalStatus";
-            this.labelCriminalStatus.Size = new System.Drawing.Size(20, 24);
+            this.labelCriminalStatus.Size = new System.Drawing.Size(17, 19);
             this.labelCriminalStatus.TabIndex = 15;
             this.labelCriminalStatus.Text = "-";
             // 
@@ -218,7 +218,7 @@
             this.labelCriminalEvilnessFactor.AutoSize = true;
             this.labelCriminalEvilnessFactor.Location = new System.Drawing.Point(247, 354);
             this.labelCriminalEvilnessFactor.Name = "labelCriminalEvilnessFactor";
-            this.labelCriminalEvilnessFactor.Size = new System.Drawing.Size(20, 24);
+            this.labelCriminalEvilnessFactor.Size = new System.Drawing.Size(17, 19);
             this.labelCriminalEvilnessFactor.TabIndex = 16;
             this.labelCriminalEvilnessFactor.Text = "-";
             // 
@@ -236,7 +236,7 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(40, 499);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(96, 28);
+            this.checkBox1.Size = new System.Drawing.Size(80, 23);
             this.checkBox1.TabIndex = 20;
             this.checkBox1.Text = "Search";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -245,7 +245,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(40, 543);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(272, 32);
+            this.textBox1.Size = new System.Drawing.Size(272, 27);
             this.textBox1.TabIndex = 21;
             // 
             // button2
@@ -272,7 +272,7 @@
             // 
             // FormReadCriminalInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(574, 606);
             this.Controls.Add(this.textBox1);
@@ -298,10 +298,8 @@
             this.Controls.Add(this.Naem);
             this.Controls.Add(this.CriminalID);
             this.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-           // this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-          //  this.Name = "FormReadCriminalInfo";
-          //  this.Text = "FormReadCriminalInfo";
-         //   this.Load += new System.EventHandler(this.FormReadCriminalInfo_Load);
+            this.Name = "FormReadCriminalInfo";
+            this.Load += new System.EventHandler(this.FormReadCriminalInfo_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 
