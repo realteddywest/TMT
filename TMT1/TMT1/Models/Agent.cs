@@ -10,12 +10,16 @@ namespace TMT1
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         private string name;
+        private string nickname;
+        private int age;
+        private string townid;
+       
         public Agent()
         {
             Criminals = new HashSet<Criminal>();
         }
 
-        public Agent(string agentName,string agentNickName,int agentAge,int townId)
+        public Agent(string agentName, string agentNickName, int agentAge, int townId)
         {
             this.Name = agentName;
             this.Nickname = agentNickName;
@@ -33,7 +37,7 @@ namespace TMT1
             get { return this.name; }
             set
             {
-                if (value.Length>=5)
+                if (value.Length >= 5)
                 {
                     this.name = name;
                 }
@@ -46,13 +50,59 @@ namespace TMT1
 
         [StringLength(50)]
 
-        public string Nickname { get; set; }
+        public string Nickname
+        {
+            get { return this.nickname; }
+            set
+            {
+                if (value.Length >= 3)
+                {
+                    this.name = name;
+                }
+                else
+                {
+                    throw new ArgumentException("Nickname is too short!!!");
+                }
+            }
+        }
 
-        public int? Age { get; set; }
+        public int? Age
+        {
+            get { return this.age; }
+            set
+            {
+                if (value >=1)
+                {
+                    this.age= age;
+                }
+                else
+                {
+                    throw new ArgumentException("Age are incorrect!!!");
+                }
+            }
+        }
 
-        public int? TownId { get; set; }
+        public int? TownId
+        {
+            get { return this.TownId; }
+            set
+            {
+                if (value >= 1)
+                {
+                    this.TownId = TownId;
+                }
+                else
+                {
+                    throw new ArgumentException("TownId is incorrect!!!");
+                }
+            }
+        }
 
-        public virtual Town Town { get; set; }
+        public virtual Town Town
+        {
+            get;
+            set;
+        }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Criminal> Criminals { get; set; }
