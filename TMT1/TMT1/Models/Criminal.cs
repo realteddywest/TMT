@@ -7,7 +7,7 @@ namespace TMT1
     using System.Data.Entity.Spatial;
 
     public partial class Criminal
-    {
+    {   
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
 
         public Criminal()

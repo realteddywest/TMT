@@ -9,6 +9,7 @@ namespace TMT1
     public partial class Agent
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        private string name;
         public Agent()
         {
             Criminals = new HashSet<Criminal>();
@@ -27,7 +28,21 @@ namespace TMT1
 
         [StringLength(30)]
 
-        public string Name { get; set; }
+        public string Name
+        {
+            get { return this.name; }
+            set
+            {
+                if (value.Length>=5)
+                {
+                    this.name = name;
+                }
+                else
+                {
+                    throw new ArgumentException("Name is too short!!!");
+                }
+            }
+        }
 
         [StringLength(50)]
 
