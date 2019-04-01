@@ -16,7 +16,7 @@ namespace TMT1
       
             //ConsoleController controller = new ConsoleController();
 
-            TMTContext context = new TMTContext();
+            //TMTContext context = new TMTContext();
            
             // DeleteController d = new DeleteController(context);
             //  UpdateController u = new UpdateController(context);
@@ -28,9 +28,9 @@ namespace TMT1
             Application.EnableVisualStyles();
             // Application.Run(new FormReadCriminalInfo());
             //  Application.Run(new FormReadAgentInfo());
-            Application.Run(new FormReadTownInfo());
+           // Application.Run(new FormReadTownInfo());
             //  Application.Run(new FormReadCriminalInfo());
-            Application.Run(new FormAddNewCriminal());
+          Application.Run(new FormAddNewCriminal());
 
         }
     }

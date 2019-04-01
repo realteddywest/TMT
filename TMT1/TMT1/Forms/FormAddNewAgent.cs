@@ -16,5 +16,10 @@ namespace TMT1.Forms
         {
             InitializeComponent();
         }
+
+        private void FormAddNewAgent_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
