@@ -64,6 +64,7 @@ namespace TMT1.Controllers
                 return false;
             }
         }
+        // Update criminal sentence
 
         public bool UpdateCriminalSentence(int id, string newSentence)
         {

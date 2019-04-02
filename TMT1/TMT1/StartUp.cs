@@ -14,7 +14,7 @@ namespace TMT1
         static void Main(string[] args)
         {
       
-            //ConsoleController controller = new ConsoleController();
+            ConsoleController controller = new ConsoleController();
 
             //TMTContext context = new TMTContext();
            
@@ -25,12 +25,12 @@ namespace TMT1
             //u.UpdateAgentNickname(13, "Coco");
 
             
-            Application.EnableVisualStyles();
+           // Application.EnableVisualStyles();
             // Application.Run(new FormReadCriminalInfo());
             //  Application.Run(new FormReadAgentInfo());
            // Application.Run(new FormReadTownInfo());
             //  Application.Run(new FormReadCriminalInfo());
-          Application.Run(new FormAddNewCriminal());
+         // Application.Run(new FormAddNewCriminal());
 
         }
     }
