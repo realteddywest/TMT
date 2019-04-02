@@ -84,21 +84,21 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(255, 32);
+            this.textBox1.Location = new System.Drawing.Point(266, 31);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(236, 30);
             this.textBox1.TabIndex = 4;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(255, 81);
+            this.textBox2.Location = new System.Drawing.Point(266, 81);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(236, 30);
             this.textBox2.TabIndex = 5;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(255, 131);
+            this.textBox3.Location = new System.Drawing.Point(266, 131);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(236, 30);
             this.textBox3.TabIndex = 6;
@@ -106,7 +106,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Bahnschrift SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(144, 315);
+            this.button1.Location = new System.Drawing.Point(149, 313);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(246, 63);
             this.button1.TabIndex = 8;
@@ -127,7 +127,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(255, 181);
+            this.comboBox1.Location = new System.Drawing.Point(266, 181);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(236, 33);
             this.comboBox1.TabIndex = 10;
@@ -136,7 +136,7 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(255, 231);
+            this.comboBox2.Location = new System.Drawing.Point(266, 234);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(236, 33);
             this.comboBox2.TabIndex = 11;
@@ -146,7 +146,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(549, 424);
+            this.BackColor = System.Drawing.Color.Lavender;
+            this.ClientSize = new System.Drawing.Size(552, 423);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label5);
@@ -160,6 +161,8 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximumSize = new System.Drawing.Size(570, 470);
+            this.MinimumSize = new System.Drawing.Size(570, 470);
             this.Name = "FormAddNewAgent";
             this.Text = "FormAddNewAgent";
             this.Load += new System.EventHandler(this.FormAddNewAgent_Load);

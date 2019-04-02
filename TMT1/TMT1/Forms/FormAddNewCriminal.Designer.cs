@@ -221,6 +221,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Lavender;
             this.ClientSize = new System.Drawing.Size(587, 560);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
@@ -240,6 +241,8 @@
             this.Controls.Add(this.labelNickName);
             this.Controls.Add(this.labelName);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximumSize = new System.Drawing.Size(605, 607);
+            this.MinimumSize = new System.Drawing.Size(605, 607);
             this.Name = "FormAddNewCriminal";
             this.Text = "FormAddNewCriminal";
             this.Load += new System.EventHandler(this.FormAddNewCriminal_Load);
