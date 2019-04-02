@@ -8,6 +8,7 @@ namespace TMT1
 
     public partial class EvilnessFactor
     {
+        private string name;
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
 
         public EvilnessFactor()
@@ -19,7 +20,21 @@ namespace TMT1
 
         [StringLength(30)]
 
-        public string Name { get; set; }
+        public string Name
+        {
+            get { return this.name; }
+            set
+            {
+                if (value.Length >= 5)
+                {
+                    this.name = name;
+                }
+                else
+                {
+                    throw new ArgumentException("Name is too short!!!");
+                }
+            }
+        }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
 

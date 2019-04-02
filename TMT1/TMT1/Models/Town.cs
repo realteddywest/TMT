@@ -8,6 +8,8 @@ namespace TMT1
 
     public partial class Town
     {
+        private string name;
+        private int countrycode;
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
 
         public Town()
@@ -20,9 +22,37 @@ namespace TMT1
 
         [StringLength(30)]
 
-        public string Name { get; set; }
+        public string Name
+        {
+            get { return this.name; }
+            set
+            {
+                if (value.Length >= 2)
+                {
+                    this.name = name;
+                }
+                else
+                {
+                    throw new ArgumentException("Name is too short!!!");
+                }
+            }
+        }
 
-        public int? CountryCode { get; set; }
+        public int? CountryCode
+        {
+            get { return this.countrycode; }
+            set
+            {
+                if (value>= 1)
+                {
+                    this.countrycode = countrycode;
+                }
+                else
+                {
+                    throw new ArgumentException("Countrycode is invalide!!!");
+                }
+            }
+        }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
 
