@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using TMT1.Forms;
 
 namespace TMT1.Controllers
 {
@@ -50,7 +52,11 @@ namespace TMT1.Controllers
                         break;
                     case "4":
                         Update();
-                        break;                     
+                        break;
+                    case "5":
+                        Application.EnableVisualStyles();
+                        Application.Run(new FormMain(context, insert, read, update, delete));
+                        break;
                     default: return;
                        
                 }

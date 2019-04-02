@@ -25,7 +25,7 @@ namespace TMT1
             get { return this.name; }
             set
             {
-                if (value.Length >= 5)
+                if (value.Length >= 3)
                 {
                     this.name = name;
                 }
