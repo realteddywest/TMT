@@ -67,5 +67,10 @@ namespace TMT1.Forms
             Form form = new FormReadCriminalInfo();
             form.Show();
         }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

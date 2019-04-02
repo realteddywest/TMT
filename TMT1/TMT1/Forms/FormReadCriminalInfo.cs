@@ -97,7 +97,7 @@ namespace TMT1.Forms
                 labelCriminalCrime.Text = criminals[i].Crime.ToString();
                 labelCriminalSentence.Text = criminals[i].Sentence.ToString();
                 labelCriminalStatus.Text = criminals[i].Status.ToString();
-                labelCriminalEvilnessFactor.Text = criminals[i].EvilnessFactor.ToString();
+                labelCriminalEvilnessFactor.Text = criminals[i].EvilnessFactor.Name;
             }
             else
             {
@@ -108,7 +108,7 @@ namespace TMT1.Forms
                 labelCriminalCrime.Text = criminals[i].Crime.ToString();
                 labelCriminalSentence.Text = criminals[i].Sentence.ToString();
                 labelCriminalStatus.Text = criminals[i].Status.ToString();
-                labelCriminalEvilnessFactor.Text = criminals[i].EvilnessFactor.ToString();
+                labelCriminalEvilnessFactor.Text = criminals[i].EvilnessFactor.Name;
             }
         }
 
@@ -124,6 +124,24 @@ namespace TMT1.Forms
             button2.Enabled = !trueOrFalse;
             button3.Enabled = trueOrFalse;
             textBox1.Enabled = trueOrFalse;
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            EnableOrDesable(true);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var c = criminals.FirstOrDefault(x=>x.Name==textBox1.Text);
+            labelCriminalID.Text = c.Id.ToString();
+            labelCriminalName.Text = c.Name;
+            labelCriminalNickName.Text = c.Nickname;
+            labelCriminalTownId.Text = c.TownId.ToString();
+            labelCriminalCrime.Text = c.Crime.ToString();
+            labelCriminalSentence.Text = c.Sentence.ToString();
+            labelCriminalStatus.Text = c.Status.ToString();
+            labelCriminalEvilnessFactor.Text = c.EvilnessFactor.Name;
         }
     }
 }
