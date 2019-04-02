@@ -103,5 +103,10 @@ namespace TMT1.Forms
             button3.Enabled = trueOrFalse;
             textBox1.Enabled = trueOrFalse;
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
