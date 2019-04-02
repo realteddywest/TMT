@@ -38,5 +38,10 @@ namespace TMT1.Forms
             Form form = new FormAddNewAgent(context, insert, read);
             form.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
