@@ -114,6 +114,21 @@ namespace TMT1.Forms
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            
+   //         bool exist = ;
+   //         if (exist == true)
+   //         {
+                
+   //         }
+
+   //         else
+  //          {
+   //             MessageBox.Show("Doesn't exist");
+  //          }
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
