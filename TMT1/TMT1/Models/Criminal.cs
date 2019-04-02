@@ -7,7 +7,13 @@ namespace TMT1
     using System.Data.Entity.Spatial;
 
     public partial class Criminal
-    {   
+    {
+        private string name;
+        private string nickname;
+        private string crime;
+        private string sentence;
+        private string status;
+      
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
 
         public Criminal()
@@ -32,25 +38,94 @@ namespace TMT1
 
         [StringLength(50)]
 
-        public string Name { get; set; }
+        public string Name
+        {
+            get { return this.name; }
+            set
+            {
+                if (value.Length >= 5)
+                {
+                    this.name = name;
+                }
+                else
+                {
+                    throw new ArgumentException("Name is too short!!!");
+                }
+            }
+        }
 
         [StringLength(50)]
 
-        public string Nickname { get; set; }
+        public string Nickname
+        {
+            get { return this.Nickname; }
+            set
+            {
+                if (value.Length >= 3)
+                {
+                    this.name = name;
+                }
+                else
+                {
+                    throw new ArgumentException("Nickname is too short!!!");
+                }
+            }
+        }
 
         public int? TownId { get; set; }
 
         [StringLength(100)]
 
-        public string Crime { get; set; }
+        public string Crime
+        {
+            get { return this.crime; }
+            set
+            {
+                if (value.Length >= 3)
+                {
+                    this.crime = crime;
+                }
+                else
+                {
+                    throw new ArgumentException("The facts are invalid!!!");
+                }
+            }
+        }
 
         [StringLength(100)]
 
-        public string Sentence { get; set; }
+        public string Sentence
+        {
+            get { return this.sentence; }
+            set
+            {
+                if (value.Length >= 3)
+                {
+                    this.sentence = sentence;
+                }
+                else
+                {
+                    throw new ArgumentException("The facts are invalid!!!");
+                }
+            }
+        }
 
         [StringLength(50)]
 
-        public string Status { get; set; }
+        public string Status {
+            get { return this.status; }
+            set
+            {
+                if (value.Length >= 3)
+                {
+                    this.status = status;
+                }
+                else
+                {
+                    throw new ArgumentException("This status is  incorrex!!!");
+                }
+            }
+        }
 
         public int? EvilnessFactorId { get; set; }
 
