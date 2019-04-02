@@ -52,7 +52,7 @@
             this.label1.Location = new System.Drawing.Point(48, 37);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 24);
+            this.label1.Size = new System.Drawing.Size(24, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "ID";
             // 
@@ -63,7 +63,7 @@
             this.label2.Location = new System.Drawing.Point(48, 79);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 24);
+            this.label2.Size = new System.Drawing.Size(52, 19);
             this.label2.TabIndex = 1;
             this.label2.Text = "Name";
             // 
@@ -74,7 +74,7 @@
             this.label3.Location = new System.Drawing.Point(48, 125);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 24);
+            this.label3.Size = new System.Drawing.Size(81, 19);
             this.label3.TabIndex = 2;
             this.label3.Text = "Nickname";
             // 
@@ -85,7 +85,7 @@
             this.label4.Location = new System.Drawing.Point(48, 169);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 24);
+            this.label4.Size = new System.Drawing.Size(37, 19);
             this.label4.TabIndex = 3;
             this.label4.Text = "Age";
             // 
@@ -96,7 +96,7 @@
             this.label5.Location = new System.Drawing.Point(48, 214);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 24);
+            this.label5.Size = new System.Drawing.Size(59, 19);
             this.label5.TabIndex = 4;
             this.label5.Text = "TownId";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -106,7 +106,7 @@
             this.labelAgentID.AutoSize = true;
             this.labelAgentID.Location = new System.Drawing.Point(211, 37);
             this.labelAgentID.Name = "labelAgentID";
-            this.labelAgentID.Size = new System.Drawing.Size(19, 25);
+            this.labelAgentID.Size = new System.Drawing.Size(14, 20);
             this.labelAgentID.TabIndex = 5;
             this.labelAgentID.Text = "-";
             this.labelAgentID.Click += new System.EventHandler(this.LabelAgentID_Click);
@@ -116,7 +116,7 @@
             this.labelAgentName.AutoSize = true;
             this.labelAgentName.Location = new System.Drawing.Point(211, 79);
             this.labelAgentName.Name = "labelAgentName";
-            this.labelAgentName.Size = new System.Drawing.Size(19, 25);
+            this.labelAgentName.Size = new System.Drawing.Size(14, 20);
             this.labelAgentName.TabIndex = 6;
             this.labelAgentName.Text = "-";
             // 
@@ -125,7 +125,7 @@
             this.labelAgentNickname.AutoSize = true;
             this.labelAgentNickname.Location = new System.Drawing.Point(211, 125);
             this.labelAgentNickname.Name = "labelAgentNickname";
-            this.labelAgentNickname.Size = new System.Drawing.Size(19, 25);
+            this.labelAgentNickname.Size = new System.Drawing.Size(14, 20);
             this.labelAgentNickname.TabIndex = 7;
             this.labelAgentNickname.Text = "-";
             // 
@@ -134,7 +134,7 @@
             this.labelAgentAge.AutoSize = true;
             this.labelAgentAge.Location = new System.Drawing.Point(211, 169);
             this.labelAgentAge.Name = "labelAgentAge";
-            this.labelAgentAge.Size = new System.Drawing.Size(19, 25);
+            this.labelAgentAge.Size = new System.Drawing.Size(14, 20);
             this.labelAgentAge.TabIndex = 8;
             this.labelAgentAge.Text = "-";
             // 
@@ -143,7 +143,7 @@
             this.labelAgentTownId.AutoSize = true;
             this.labelAgentTownId.Location = new System.Drawing.Point(211, 214);
             this.labelAgentTownId.Name = "labelAgentTownId";
-            this.labelAgentTownId.Size = new System.Drawing.Size(19, 25);
+            this.labelAgentTownId.Size = new System.Drawing.Size(14, 20);
             this.labelAgentTownId.TabIndex = 9;
             this.labelAgentTownId.Text = "-";
             // 
@@ -175,10 +175,11 @@
             this.checkBox1.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.checkBox1.Location = new System.Drawing.Point(33, 369);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(96, 28);
+            this.checkBox1.Size = new System.Drawing.Size(80, 23);
             this.checkBox1.TabIndex = 12;
             this.checkBox1.Text = "Search";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);
             // 
             // button3
             // 
@@ -195,13 +196,13 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(33, 415);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(234, 30);
+            this.textBox1.Size = new System.Drawing.Size(234, 26);
             this.textBox1.TabIndex = 14;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // FormReadAgentInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(511, 497);
             this.Controls.Add(this.textBox1);

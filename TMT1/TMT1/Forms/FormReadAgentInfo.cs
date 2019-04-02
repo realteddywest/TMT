@@ -134,5 +134,10 @@ namespace TMT1.Forms
             button3.Enabled = trueOrFalse;
             textBox1.Enabled = trueOrFalse;
         }
+
+        private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
+        {
+            EnableOrDesable(true);
+        }
     }
 }
