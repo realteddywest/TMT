@@ -13,14 +13,17 @@ namespace TMT1.Forms
 {
     public partial class FormReadCriminalInfo : Form
     {
-        private static TMTContext context = new TMTContext();
-        private static ReadController read = new ReadController(context);
-        private List<Criminal> criminals= read.CriminalsList();
-        int i = 0;
+        private  TMTContext context ;
+        private  ReadController read ;
+        private List<Criminal> criminals;
+        private int i = 0;
 
-        public FormReadCriminalInfo()
+        public FormReadCriminalInfo(TMTContext context, ReadController read)
         {
             InitializeComponent();
+            this.context = context;
+            this.read = read;
+            criminals = read.CriminalsList();
             EnableOrDesable(false);
         }
 
@@ -67,7 +70,7 @@ namespace TMT1.Forms
                 labelCriminalCrime.Text = criminals[i].Crime.ToString();
                 labelCriminalSentence.Text = criminals[i].Sentence.ToString();
                 labelCriminalStatus.Text = criminals[i].Status.ToString();
-                labelCriminalEvilnessFactor.Text = criminals[i].EvilnessFactor.ToString();
+                labelCriminalEvilnessFactor.Text = criminals[i].EvilnessFactor.Name;
 
             }
             else

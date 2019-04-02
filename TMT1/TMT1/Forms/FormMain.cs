@@ -35,13 +35,13 @@ namespace TMT1.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form form = new FormAddNewAgent(context, insert, read);
+            FormAddNewAgent form = new FormAddNewAgent(context, insert, read);
             form.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Form form = new FormReadAgentInfo();
+            FormReadAgentInfo form = new FormReadAgentInfo(context,read);
             form.Show();
         }
 
@@ -52,19 +52,19 @@ namespace TMT1.Forms
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form form = new FormAddNewCriminal(context, insert, read);
+            FormAddNewCriminal form = new FormAddNewCriminal(context, insert, read);
             form.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form form = new FormReadTownInfo();
+            FormReadTownInfo form = new FormReadTownInfo(context,read);
             form.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form form = new FormReadCriminalInfo();
+            FormReadCriminalInfo form = new FormReadCriminalInfo(context,read);
             form.Show();
         }
 

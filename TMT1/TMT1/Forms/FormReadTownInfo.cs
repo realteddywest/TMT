@@ -13,14 +13,17 @@ namespace TMT1.Forms
 {
     public partial class FormReadTownInfo : Form
     {
-        private static TMTContext context = new TMTContext();
-        private static ReadController read = new ReadController(context);
-        private List<Town> towns = read.TownsList();
-        int i = 0;
+        private  TMTContext context ;
+        private  ReadController read ;
+        private List<Town> towns ;
+        private int i = 0;
 
-        public FormReadTownInfo()
+        public FormReadTownInfo(TMTContext context,ReadController read)
         {
             InitializeComponent();
+            this.context = context;
+            this.read = read;
+            towns = read.TownsList();
             EnableOrDesable(false);
         }
 
@@ -105,6 +108,11 @@ namespace TMT1.Forms
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

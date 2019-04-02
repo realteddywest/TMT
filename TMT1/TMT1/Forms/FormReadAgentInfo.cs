@@ -13,14 +13,17 @@ namespace TMT1.Forms
 {
     public partial class FormReadAgentInfo : Form
     {
-        private static TMTContext context = new TMTContext();
-        private static ReadController read = new ReadController(context);
-        private List<Agent> agents = read.AgentsList();
+        private  TMTContext context ;
+        private  ReadController read ;
+        private List<Agent> agents ;
         int i = 0;
 
-        public FormReadAgentInfo()
+        public FormReadAgentInfo( TMTContext context, ReadController read)
         {
             InitializeComponent();
+            this.context = context;
+            this.read = read;
+            agents = read.AgentsList();
             EnableOrDesable(false);
         }
 
