@@ -9,7 +9,7 @@ namespace TMT1
     public partial class Town
     {
         private string name;
-        private int countrycode;
+        private int? countrycode;
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
 
         public Town()
@@ -29,7 +29,7 @@ namespace TMT1
             {
                 if (value.Length >= 2)
                 {
-                    this.name = name;
+                    this.name = value;
                 }
                 else
                 {
@@ -43,9 +43,9 @@ namespace TMT1
             get { return this.countrycode; }
             set
             {
-                if (value>= 1)
+                if (value >=1)
                 {
-                    this.countrycode = countrycode;
+                    this.countrycode = value;
                 }
                 else
                 {

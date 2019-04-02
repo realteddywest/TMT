@@ -27,7 +27,7 @@ namespace TMT1
             {
                 if (value.Length >= 3)
                 {
-                    this.name = name;
+                    this.name = value;
                 }
                 else
                 {

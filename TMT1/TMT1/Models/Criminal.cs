@@ -45,7 +45,7 @@ namespace TMT1
             {
                 if (value.Length >= 5)
                 {
-                    this.name = name;
+                    this.name = value;
                 }
                 else
                 {
@@ -58,12 +58,12 @@ namespace TMT1
 
         public string Nickname
         {
-            get { return this.Nickname; }
+            get { return this.nickname; }
             set
             {
                 if (value.Length >= 3)
                 {
-                    this.name = name;
+                    this.nickname = value;
                 }
                 else
                 {
@@ -83,7 +83,7 @@ namespace TMT1
             {
                 if (value.Length >= 3)
                 {
-                    this.crime = crime;
+                    this.crime = value;
                 }
                 else
                 {
@@ -101,7 +101,7 @@ namespace TMT1
             {
                 if (value.Length >= 3)
                 {
-                    this.sentence = sentence;
+                    this.sentence = value;
                 }
                 else
                 {
@@ -118,7 +118,7 @@ namespace TMT1
             {
                 if (value.Length >= 3)
                 {
-                    this.status = status;
+                    this.status = value;
                 }
                 else
                 {

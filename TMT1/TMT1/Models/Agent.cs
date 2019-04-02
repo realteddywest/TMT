@@ -11,8 +11,8 @@ namespace TMT1
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         private string name;
         private string nickname;
-        private int age;
-        private string townid;
+        private int? age;
+        private int? townid;
        
         public Agent()
         {
@@ -39,7 +39,7 @@ namespace TMT1
             {
                 if (value.Length >= 5)
                 {
-                    this.name = name;
+                    this.name = value;
                 }
                 else
                 {
@@ -57,7 +57,7 @@ namespace TMT1
             {
                 if (value.Length >= 3)
                 {
-                    this.name = name;
+                    this.nickname = value;
                 }
                 else
                 {
@@ -73,7 +73,7 @@ namespace TMT1
             {
                 if (value >=1)
                 {
-                    this.age= age;
+                    this.age = value;
                 }
                 else
                 {
@@ -84,12 +84,12 @@ namespace TMT1
 
         public int? TownId
         {
-            get { return this.TownId; }
+            get { return this.townid; }
             set
             {
                 if (value >= 1)
                 {
-                    this.TownId = TownId;
+                    this.townid = value;
                 }
                 else
                 {

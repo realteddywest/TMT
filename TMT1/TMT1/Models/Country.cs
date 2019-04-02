@@ -8,7 +8,6 @@ namespace TMT1
 
     public partial class Country
     {
-        private string name;
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
 
         public Country()
