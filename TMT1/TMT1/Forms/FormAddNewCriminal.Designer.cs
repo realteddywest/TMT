@@ -50,10 +50,11 @@
             // labelName
             // 
             this.labelName.AutoSize = true;
-            this.labelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelName.Location = new System.Drawing.Point(34, 28);
+            this.labelName.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelName.Location = new System.Drawing.Point(45, 34);
+            this.labelName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(51, 20);
+            this.labelName.Size = new System.Drawing.Size(63, 24);
             this.labelName.TabIndex = 0;
             this.labelName.Text = "Name";
             this.labelName.Click += new System.EventHandler(this.labelName_Click);
@@ -61,70 +62,76 @@
             // labelNickName
             // 
             this.labelNickName.AutoSize = true;
-            this.labelNickName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelNickName.Location = new System.Drawing.Point(34, 66);
+            this.labelNickName.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelNickName.Location = new System.Drawing.Point(45, 84);
+            this.labelNickName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelNickName.Name = "labelNickName";
-            this.labelNickName.Size = new System.Drawing.Size(79, 20);
+            this.labelNickName.Size = new System.Drawing.Size(100, 24);
             this.labelNickName.TabIndex = 1;
             this.labelNickName.Text = "Nickname";
             // 
             // labeltownId
             // 
             this.labeltownId.AutoSize = true;
-            this.labeltownId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labeltownId.Location = new System.Drawing.Point(34, 105);
+            this.labeltownId.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labeltownId.Location = new System.Drawing.Point(45, 134);
+            this.labeltownId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labeltownId.Name = "labeltownId";
-            this.labeltownId.Size = new System.Drawing.Size(65, 20);
+            this.labeltownId.Size = new System.Drawing.Size(59, 24);
             this.labeltownId.TabIndex = 2;
-            this.labeltownId.Text = "Town Id";
+            this.labeltownId.Text = "Town ";
             // 
             // labelCrime
             // 
             this.labelCrime.AutoSize = true;
-            this.labelCrime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelCrime.Location = new System.Drawing.Point(40, 169);
+            this.labelCrime.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelCrime.Location = new System.Drawing.Point(44, 234);
+            this.labelCrime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCrime.Name = "labelCrime";
-            this.labelCrime.Size = new System.Drawing.Size(50, 20);
+            this.labelCrime.Size = new System.Drawing.Size(64, 24);
             this.labelCrime.TabIndex = 3;
             this.labelCrime.Text = "Crime";
             // 
             // labelSentence
             // 
             this.labelSentence.AutoSize = true;
-            this.labelSentence.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelSentence.Location = new System.Drawing.Point(35, 204);
+            this.labelSentence.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelSentence.Location = new System.Drawing.Point(45, 284);
+            this.labelSentence.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSentence.Name = "labelSentence";
-            this.labelSentence.Size = new System.Drawing.Size(78, 20);
+            this.labelSentence.Size = new System.Drawing.Size(94, 24);
             this.labelSentence.TabIndex = 4;
             this.labelSentence.Text = "Sentence";
             // 
             // labelStatus
             // 
             this.labelStatus.AutoSize = true;
-            this.labelStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelStatus.Location = new System.Drawing.Point(34, 239);
+            this.labelStatus.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelStatus.Location = new System.Drawing.Point(45, 334);
+            this.labelStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelStatus.Name = "labelStatus";
-            this.labelStatus.Size = new System.Drawing.Size(56, 20);
+            this.labelStatus.Size = new System.Drawing.Size(68, 24);
             this.labelStatus.TabIndex = 5;
             this.labelStatus.Text = "Status";
             // 
             // labelEvilnessFactor
             // 
             this.labelEvilnessFactor.AutoSize = true;
-            this.labelEvilnessFactor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelEvilnessFactor.Location = new System.Drawing.Point(34, 278);
+            this.labelEvilnessFactor.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelEvilnessFactor.Location = new System.Drawing.Point(45, 384);
+            this.labelEvilnessFactor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelEvilnessFactor.Name = "labelEvilnessFactor";
-            this.labelEvilnessFactor.Size = new System.Drawing.Size(117, 20);
+            this.labelEvilnessFactor.Size = new System.Drawing.Size(147, 24);
             this.labelEvilnessFactor.TabIndex = 6;
             this.labelEvilnessFactor.Text = "Evilness Factor";
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(116, 314);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Font = new System.Drawing.Font("Bahnschrift SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(165, 458);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(184, 51);
+            this.button1.Size = new System.Drawing.Size(245, 63);
             this.button1.TabIndex = 7;
             this.button1.Text = "ADD";
             this.button1.UseVisualStyleBackColor = true;
@@ -132,69 +139,71 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(215, 32);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Location = new System.Drawing.Point(287, 39);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(178, 20);
+            this.textBox1.Size = new System.Drawing.Size(236, 22);
             this.textBox1.TabIndex = 8;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(215, 69);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Location = new System.Drawing.Point(287, 88);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(178, 20);
+            this.textBox2.Size = new System.Drawing.Size(236, 22);
             this.textBox2.TabIndex = 9;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(215, 171);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox4.Location = new System.Drawing.Point(287, 238);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(178, 20);
+            this.textBox4.Size = new System.Drawing.Size(236, 22);
             this.textBox4.TabIndex = 11;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(215, 204);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox5.Location = new System.Drawing.Point(287, 288);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(178, 20);
+            this.textBox5.Size = new System.Drawing.Size(236, 22);
             this.textBox5.TabIndex = 12;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(215, 239);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox6.Location = new System.Drawing.Point(287, 338);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(178, 20);
+            this.textBox6.Size = new System.Drawing.Size(236, 22);
             this.textBox6.TabIndex = 13;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(215, 280);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox7.Location = new System.Drawing.Point(287, 388);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(178, 20);
+            this.textBox7.Size = new System.Drawing.Size(236, 22);
             this.textBox7.TabIndex = 14;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(34, 138);
+            this.label1.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(45, 184);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 20);
+            this.label1.Size = new System.Drawing.Size(81, 24);
             this.label1.TabIndex = 15;
-            this.label1.Text = "Town Id";
+            this.label1.Text = "Country";
             // 
             // comboBox1
             // 
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(215, 107);
+            this.comboBox1.Location = new System.Drawing.Point(287, 131);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(178, 28);
+            this.comboBox1.Size = new System.Drawing.Size(236, 33);
             this.comboBox1.TabIndex = 16;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -202,16 +211,17 @@
             // 
             this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(215, 140);
+            this.comboBox2.Location = new System.Drawing.Point(287, 181);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(178, 28);
+            this.comboBox2.Size = new System.Drawing.Size(236, 33);
             this.comboBox2.TabIndex = 17;
             // 
             // FormAddNewCriminal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(431, 390);
+            this.ClientSize = new System.Drawing.Size(587, 560);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
@@ -229,6 +239,7 @@
             this.Controls.Add(this.labeltownId);
             this.Controls.Add(this.labelNickName);
             this.Controls.Add(this.labelName);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormAddNewCriminal";
             this.Text = "FormAddNewCriminal";
             this.Load += new System.EventHandler(this.FormAddNewCriminal_Load);
