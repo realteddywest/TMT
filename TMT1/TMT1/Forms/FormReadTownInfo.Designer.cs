@@ -63,18 +63,18 @@
             this.labelTownName.AutoSize = true;
             this.labelTownName.Location = new System.Drawing.Point(130, 26);
             this.labelTownName.Name = "labelTownName";
-            this.labelTownName.Size = new System.Drawing.Size(51, 20);
+            this.labelTownName.Size = new System.Drawing.Size(14, 20);
             this.labelTownName.TabIndex = 2;
-            this.labelTownName.Text = "label3";
+            this.labelTownName.Text = "-";
             // 
             // labelCountryName
             // 
             this.labelCountryName.AutoSize = true;
             this.labelCountryName.Location = new System.Drawing.Point(130, 76);
             this.labelCountryName.Name = "labelCountryName";
-            this.labelCountryName.Size = new System.Drawing.Size(51, 20);
+            this.labelCountryName.Size = new System.Drawing.Size(14, 20);
             this.labelCountryName.TabIndex = 3;
-            this.labelCountryName.Text = "label3";
+            this.labelCountryName.Text = "-";
             // 
             // button1
             // 

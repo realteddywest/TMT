@@ -41,7 +41,31 @@ namespace TMT1.Forms
 
         private void button5_Click(object sender, EventArgs e)
         {
+            Form form = new FormReadAgentInfo();
+            form.Show();
+        }
 
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form form = new FormAddNewCriminal(context, insert, read);
+            form.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form form = new FormReadTownInfo();
+            form.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form form = new FormReadCriminalInfo();
+            form.Show();
         }
     }
 }
