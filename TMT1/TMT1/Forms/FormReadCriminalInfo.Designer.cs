@@ -278,7 +278,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(574, 606);
+            this.BackColor = System.Drawing.Color.Lavender;
+            this.ClientSize = new System.Drawing.Size(854, 606);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.button3);
@@ -302,6 +303,8 @@
             this.Controls.Add(this.Naem);
             this.Controls.Add(this.CriminalID);
             this.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.MaximumSize = new System.Drawing.Size(872, 653);
+            this.MinimumSize = new System.Drawing.Size(872, 653);
             this.Name = "FormReadCriminalInfo";
             this.Load += new System.EventHandler(this.FormReadCriminalInfo_Load_1);
             this.ResumeLayout(false);
