@@ -19,8 +19,6 @@ namespace TMT1.Forms
         private List<Country> countries ;
         private List<Town> towns;
 
-
-
         public FormAddNewCriminal(TMTContext context,InsertController insert,ReadController read)
         {
             InitializeComponent();
@@ -29,15 +27,11 @@ namespace TMT1.Forms
             this.read = read;
         }
 
-        private void labelName_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void FormAddNewCriminal_Load(object sender, EventArgs e)
         {
             countries = read.CountriesList();
             towns = read.TownsList();
+
             foreach (var t in towns)
             {
                 comboBox1.Items.Add(t.Name);
@@ -51,6 +45,7 @@ namespace TMT1.Forms
         private void button1_Click(object sender, EventArgs e)
         {
             bool isAdd = insert.InsertIntoCriminals(textBox1.Text, textBox2.Text, comboBox1.Text, comboBox2.Text, labelCrime.Text, labelSentence.Text, labelStatus.Text, labelEvilnessFactor.Text);
+
             if (isAdd)
             {
                 MessageBox.Show("Criminal is add sucsessfully!");
@@ -61,7 +56,12 @@ namespace TMT1.Forms
         {
             comboBox2.Text = towns.FirstOrDefault(c => c.Name == comboBox1.Text).Country.Name;
             comboBox2.Enabled = false;
+        }
+
+        private void labelName_Click(object sender, EventArgs e)
+        {
 
         }
+
     }
 }

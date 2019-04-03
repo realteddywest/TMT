@@ -27,10 +27,9 @@ namespace TMT1.Forms
             EnableOrDisable(false);
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
 
-        }
+        //-----------------------------BUTTONS----------------------------------
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -103,10 +102,9 @@ namespace TMT1.Forms
             }
         }
 
-        private void LabelAgentID_Click(object sender, EventArgs e)
-        {
 
-        }
+        //----------------------------------------------------------------------
+
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
@@ -128,12 +126,7 @@ namespace TMT1.Forms
             labelAgentNickname.Text = agents[i].Nickname;
             labelAgentAge.Text = agents[i].Age.ToString();
             labelAgentTownId.Text = agents[i].TownId.ToString();
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
+        }   
 
         private void EnableOrDisable(bool trueOrFalse)
         {
@@ -147,5 +140,25 @@ namespace TMT1.Forms
         {
             EnableOrDisable(true);
         }
+
+
+        //-------------------------EMPTY METHODS---------------------------------
+
+
+        private void LabelAgentID_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

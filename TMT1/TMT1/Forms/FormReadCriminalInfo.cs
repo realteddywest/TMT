@@ -27,17 +27,6 @@ namespace TMT1.Forms
             EnableOrDisable(false);
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
         private void FormReadCriminalInfo_Load(object sender, EventArgs e)
         {
             labelCriminalID.Text = criminals[i].Id.ToString();
@@ -50,16 +39,14 @@ namespace TMT1.Forms
             labelCriminalEvilnessFactor.Text = criminals[i].EvilnessFactor.ToString();
         }
 
-        private void CriminalID_Click(object sender, EventArgs e)
-        {
 
-        }
+        //------------------------------BUTTONS 1 & 2------------------------------
 
-        //------------------------------Button1 & Button2------------------------------
 
         private void button1_Click(object sender, EventArgs e)
         {
             i--;
+
             if (i < 0)
             {
                 i = criminals.Count - 1;
@@ -71,8 +58,8 @@ namespace TMT1.Forms
                 labelCriminalSentence.Text = criminals[i].Sentence.ToString();
                 labelCriminalStatus.Text = criminals[i].Status.ToString();
                 labelCriminalEvilnessFactor.Text = criminals[i].EvilnessFactor.Name;
-
             }
+
             else
             {
                 labelCriminalID.Text = criminals[i].Id.ToString();
@@ -88,8 +75,8 @@ namespace TMT1.Forms
 
         private void button2_Click(object sender, EventArgs e)
         {
-
             i++;
+
             if (i >= criminals.Count - 1)
             {
                 i = 0;
@@ -102,6 +89,7 @@ namespace TMT1.Forms
                 labelCriminalStatus.Text = criminals[i].Status.ToString();
                 labelCriminalEvilnessFactor.Text = criminals[i].EvilnessFactor.Name;
             }
+
             else
             {
                 labelCriminalID.Text = criminals[i].Id.ToString();
@@ -116,10 +104,8 @@ namespace TMT1.Forms
         }
 
 
-        private void FormReadCriminalInfo_Load_1(object sender, EventArgs e)
-        {
+        //-------------------------------------------------------------------------
 
-        }
 
         private void EnableOrDisable(bool trueOrFalse)
         {
@@ -147,9 +133,34 @@ namespace TMT1.Forms
             labelCriminalEvilnessFactor.Text = c.EvilnessFactor.Name;
         }
 
+
+        //----------------------------EMPTY METHODS--------------------------------
+
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
+
+        private void FormReadCriminalInfo_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CriminalID_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

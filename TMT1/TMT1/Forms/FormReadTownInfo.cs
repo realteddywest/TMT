@@ -24,7 +24,7 @@ namespace TMT1.Forms
             this.context = context;
             this.read = read;
             towns = read.TownsList();
-            EnableOrDesable(false);
+            EnableOrDisable(false);
         }
 
         private void FormReadTownInfo_Load(object sender, EventArgs e)
@@ -32,17 +32,22 @@ namespace TMT1.Forms
             labelCountryName.Text = towns.First().Country.Name;
             labelTownName.Text = towns.First().Name;
         }
+        
+
+        //--------------------------BUTTONS------------------------------------
+
 
         private void button1_Click(object sender, EventArgs e)
         {
-
             i--;
+
             if (i <= 0)
             {
                 i = towns.Count - 1;
                 labelCountryName.Text = towns[i].Country.Name;
                 labelTownName.Text = towns[i].Name;
             }
+
             else
             {
                 labelCountryName.Text = towns[i].Country.Name;
@@ -53,12 +58,14 @@ namespace TMT1.Forms
         private void button2_Click(object sender, EventArgs e)
         {
             i++;
+
             if (i >= towns.Count - 1)
             {
                 i = 0;
                 labelCountryName.Text = towns[i].Country.Name;
                 labelTownName.Text = towns[i].Name;
             }
+
             else
             {
                 labelCountryName.Text = towns[i].Country.Name;
@@ -69,11 +76,13 @@ namespace TMT1.Forms
         private void button3_Click(object sender, EventArgs e)
         {
             var find = towns.FirstOrDefault(t => t.Name == textBox1.Text);
+
             if (find != null)
             {
                 labelCountryName.Text = find.Country.Name;
                 labelTownName.Text = find.Name;
             }
+
             else
             {
                 labelCountryName.Text = "Not found!";
@@ -81,19 +90,24 @@ namespace TMT1.Forms
             }
         }
 
+
+        //----------------------------------------------------------------------
+
+
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox1.Checked)
             {
-                EnableOrDesable(true);
+                EnableOrDisable(true);
             }
+
             else
             {
-                EnableOrDesable(false);
+                EnableOrDisable(false);
             }
         }
 
-        private void EnableOrDesable(bool trueOrFalse)
+        private void EnableOrDisable(bool trueOrFalse)
         {
             button1.Enabled = !trueOrFalse;
             button2.Enabled = !trueOrFalse;
