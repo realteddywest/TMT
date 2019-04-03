@@ -159,6 +159,8 @@
             this.Controls.Add(this.labelTownName);
             this.Controls.Add(this.CountryName);
             this.Controls.Add(this.TownName);
+            this.MaximumSize = new System.Drawing.Size(465, 411);
+            this.MinimumSize = new System.Drawing.Size(465, 411);
             this.Name = "FormReadTownInfo";
             this.Text = "FormReadTownInfo";
             this.ResumeLayout(false);

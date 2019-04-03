@@ -60,7 +60,7 @@ namespace TMT1.Forms
         private void button1_Click(object sender, EventArgs e)
         {
             i--;
-            if (i <= 0)
+            if (i < 0)
             {
                 i = criminals.Count - 1;
                 labelCriminalID.Text = criminals[i].Id.ToString();
@@ -78,7 +78,7 @@ namespace TMT1.Forms
                 labelCriminalID.Text = criminals[i].Id.ToString();
                 labelCriminalName.Text = criminals[i].Name;
                 labelCriminalNickName.Text = criminals[i].Nickname;
-               labelCriminalTownId.Text = criminals[i].TownId.ToString();
+                labelCriminalTownId.Text = criminals[i].TownId.ToString();
                 labelCriminalCrime.Text = criminals[i].Crime.ToString();
                 labelCriminalSentence.Text = criminals[i].Sentence.ToString();
                 labelCriminalStatus.Text = criminals[i].Status.ToString();

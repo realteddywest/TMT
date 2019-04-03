@@ -24,7 +24,7 @@ namespace TMT1.Forms
             this.context = context;
             this.read = read;
             agents = read.AgentsList();
-            EnableOrDesable(false);
+            EnableOrDisable(false);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -35,6 +35,7 @@ namespace TMT1.Forms
         private void button1_Click(object sender, EventArgs e)
         {
             i--;
+
             if (i < 0)
             {
                 i = agents.Count - 1;
@@ -44,6 +45,7 @@ namespace TMT1.Forms
                 labelAgentAge.Text = agents[i].Age.ToString();
                 labelAgentTownId.Text = agents[i].TownId.ToString();
             }
+
             else
             {
                 labelAgentID.Text = agents[i].Id.ToString();
@@ -57,6 +59,7 @@ namespace TMT1.Forms
         private void button2_Click(object sender, EventArgs e)
         {
             i++;
+
             if (i >= agents.Count - 1)
             {
                 i = 0;
@@ -66,6 +69,7 @@ namespace TMT1.Forms
                 labelAgentAge.Text = agents[i].Age.ToString();
                 labelAgentTownId.Text = agents[i].TownId.ToString();
             }
+
             else
             {
                 labelAgentID.Text = agents[i].Id.ToString();
@@ -79,6 +83,7 @@ namespace TMT1.Forms
         private void button3_Click(object sender, EventArgs e)
         {
             var find = agents.FirstOrDefault(t => t.Name == textBox1.Text);
+
             if (find != null)
             {
                 labelAgentID.Text = find.Id.ToString();
@@ -87,14 +92,14 @@ namespace TMT1.Forms
                 labelAgentAge.Text = find.Age.ToString();
                 labelAgentTownId.Text = find.TownId.ToString();
             }
+
             else
             {
                 labelAgentID.Text = "Not found!";
                 labelAgentName.Text = "Not found!";
                 labelAgentNickname.Text = "Not found!";
                 labelAgentAge.Text = "Not found!";
-                labelAgentTownId.Text = "Not found!";
-                
+                labelAgentTownId.Text = "Not found!";               
             }
         }
 
@@ -107,30 +112,30 @@ namespace TMT1.Forms
         {
             if (checkBox1.Checked)
             {
-                EnableOrDesable(true);
+                EnableOrDisable(true);
             }
+
             else
             {
-                EnableOrDesable(false);
+                EnableOrDisable(false);
             }
         }
  
         private void FormReadAgentInfo_Load(object sender, EventArgs e)
         {
-
             labelAgentID.Text = agents[i].Id.ToString();
             labelAgentName.Text = agents[i].Name;
             labelAgentNickname.Text = agents[i].Nickname;
             labelAgentAge.Text = agents[i].Age.ToString();
             labelAgentTownId.Text = agents[i].TownId.ToString();
-
         }
 
         private void label5_Click(object sender, EventArgs e)
         {
 
         }
-        private void EnableOrDesable(bool trueOrFalse)
+
+        private void EnableOrDisable(bool trueOrFalse)
         {
             button1.Enabled = !trueOrFalse;
             button2.Enabled = !trueOrFalse;
@@ -140,7 +145,7 @@ namespace TMT1.Forms
 
         private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
         {
-            EnableOrDesable(true);
+            EnableOrDisable(true);
         }
     }
 }
