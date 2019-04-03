@@ -146,5 +146,10 @@ namespace TMT1.Forms
             labelCriminalStatus.Text = c.Status.ToString();
             labelCriminalEvilnessFactor.Text = c.EvilnessFactor.Name;
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

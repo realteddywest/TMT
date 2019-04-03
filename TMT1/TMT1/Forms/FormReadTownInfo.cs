@@ -13,12 +13,12 @@ namespace TMT1.Forms
 {
     public partial class FormReadTownInfo : Form
     {
-        private  TMTContext context ;
-        private  ReadController read ;
-        private List<Town> towns ;
+        private TMTContext context;
+        private ReadController read;
+        private List<Town> towns;
         private int i = 0;
 
-        public FormReadTownInfo(TMTContext context,ReadController read)
+        public FormReadTownInfo(TMTContext context, ReadController read)
         {
             InitializeComponent();
             this.context = context;
@@ -33,10 +33,9 @@ namespace TMT1.Forms
             labelTownName.Text = towns.First().Name;
         }
 
-        //------------------------------Button1 & Button2 & Button3------------------------------
-
         private void button1_Click(object sender, EventArgs e)
         {
+
             i--;
             if (i <= 0)
             {
@@ -49,13 +48,12 @@ namespace TMT1.Forms
                 labelCountryName.Text = towns[i].Country.Name;
                 labelTownName.Text = towns[i].Name;
             }
-           
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             i++;
-            if (i >= towns.Count-1)
+            if (i >= towns.Count - 1)
             {
                 i = 0;
                 labelCountryName.Text = towns[i].Country.Name;
@@ -71,7 +69,7 @@ namespace TMT1.Forms
         private void button3_Click(object sender, EventArgs e)
         {
             var find = towns.FirstOrDefault(t => t.Name == textBox1.Text);
-            if (find!=null)
+            if (find != null)
             {
                 labelCountryName.Text = find.Country.Name;
                 labelTownName.Text = find.Name;
@@ -82,9 +80,6 @@ namespace TMT1.Forms
                 labelTownName.Text = "Not found!";
             }
         }
-
-
-        //------------------------------Checkbox------------------------------
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
@@ -98,7 +93,6 @@ namespace TMT1.Forms
             }
         }
 
-
         private void EnableOrDesable(bool trueOrFalse)
         {
             button1.Enabled = !trueOrFalse;
@@ -107,27 +101,7 @@ namespace TMT1.Forms
             textBox1.Enabled = trueOrFalse;
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            
-   //         bool exist = ;
-   //         if (exist == true)
-   //         {
-                
-   //         }
-
-   //         else
-  //          {
-   //             MessageBox.Show("Doesn't exist");
-  //          }
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
         {
 
         }
