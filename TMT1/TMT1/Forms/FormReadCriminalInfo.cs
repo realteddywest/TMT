@@ -24,7 +24,7 @@ namespace TMT1.Forms
             this.context = context;
             this.read = read;
             criminals = read.CriminalsList();
-            EnableOrDesable(false);
+            EnableOrDisable(false);
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -82,7 +82,7 @@ namespace TMT1.Forms
                 labelCriminalCrime.Text = criminals[i].Crime.ToString();
                 labelCriminalSentence.Text = criminals[i].Sentence.ToString();
                 labelCriminalStatus.Text = criminals[i].Status.ToString();
-                labelCriminalEvilnessFactor.Text = criminals[i].EvilnessFactor.ToString();
+                labelCriminalEvilnessFactor.Text = criminals[i].EvilnessFactor.Name;
             }
         }
 
@@ -121,7 +121,7 @@ namespace TMT1.Forms
 
         }
 
-        private void EnableOrDesable(bool trueOrFalse)
+        private void EnableOrDisable(bool trueOrFalse)
         {
             button1.Enabled = !trueOrFalse;
             button2.Enabled = !trueOrFalse;
@@ -131,7 +131,7 @@ namespace TMT1.Forms
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            EnableOrDesable(true);
+            EnableOrDisable(true);
         }
 
         private void button3_Click(object sender, EventArgs e)

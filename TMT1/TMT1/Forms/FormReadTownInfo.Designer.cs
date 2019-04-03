@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.TownName = new System.Windows.Forms.Label();
+            this.CountryName = new System.Windows.Forms.Label();
             this.labelTownName = new System.Windows.Forms.Label();
             this.labelCountryName = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -40,45 +40,45 @@
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
+            // TownName
+            // 
+            this.TownName.AutoSize = true;
+            this.TownName.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TownName.Location = new System.Drawing.Point(45, 34);
+            this.TownName.Name = "TownName";
+            this.TownName.Size = new System.Drawing.Size(56, 24);
+            this.TownName.TabIndex = 0;
+            this.TownName.Text = "Town";
+            // 
+            // CountryName
+            // 
+            this.CountryName.AutoSize = true;
+            this.CountryName.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CountryName.Location = new System.Drawing.Point(45, 84);
+            this.CountryName.Name = "CountryName";
+            this.CountryName.Size = new System.Drawing.Size(81, 24);
+            this.CountryName.TabIndex = 1;
+            this.CountryName.Text = "Country";
+            // 
             // labelTownName
             // 
             this.labelTownName.AutoSize = true;
             this.labelTownName.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelTownName.Location = new System.Drawing.Point(45, 34);
+            this.labelTownName.Location = new System.Drawing.Point(204, 34);
             this.labelTownName.Name = "labelTownName";
-            this.labelTownName.Size = new System.Drawing.Size(56, 24);
-            this.labelTownName.TabIndex = 0;
-            this.labelTownName.Text = "Town";
+            this.labelTownName.Size = new System.Drawing.Size(20, 24);
+            this.labelTownName.TabIndex = 2;
+            this.labelTownName.Text = "-";
             // 
             // labelCountryName
             // 
             this.labelCountryName.AutoSize = true;
             this.labelCountryName.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelCountryName.Location = new System.Drawing.Point(45, 84);
+            this.labelCountryName.Location = new System.Drawing.Point(204, 84);
             this.labelCountryName.Name = "labelCountryName";
-            this.labelCountryName.Size = new System.Drawing.Size(81, 24);
-            this.labelCountryName.TabIndex = 1;
-            this.labelCountryName.Text = "Country";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(204, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(20, 24);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "-";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(204, 84);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(20, 24);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "-";
+            this.labelCountryName.Size = new System.Drawing.Size(20, 24);
+            this.labelCountryName.TabIndex = 3;
+            this.labelCountryName.Text = "-";
             // 
             // checkBox1
             // 
@@ -155,10 +155,10 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.labelCountryName);
             this.Controls.Add(this.labelTownName);
+            this.Controls.Add(this.CountryName);
+            this.Controls.Add(this.TownName);
             this.Name = "FormReadTownInfo";
             this.Text = "FormReadTownInfo";
             this.ResumeLayout(false);
@@ -168,10 +168,10 @@
 
         #endregion
 
+        private System.Windows.Forms.Label TownName;
+        private System.Windows.Forms.Label CountryName;
         private System.Windows.Forms.Label labelTownName;
         private System.Windows.Forms.Label labelCountryName;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
