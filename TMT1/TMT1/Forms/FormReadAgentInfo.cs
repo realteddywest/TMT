@@ -35,7 +35,7 @@ namespace TMT1.Forms
         private void button1_Click(object sender, EventArgs e)
         {
             i--;
-            if (i <= 0)
+            if (i < 0)
             {
                 i = agents.Count - 1;
                 labelAgentID.Text = agents[i].Id.ToString();
