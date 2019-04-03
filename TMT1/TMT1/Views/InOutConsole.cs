@@ -19,7 +19,8 @@ namespace TMT1.Views
             return int.Parse(Console.ReadLine());
         }
        
-        //Read names
+        //--------------------------READ NAMES----------------------
+
 
         public string ReadCountryName()
         {
@@ -52,7 +53,8 @@ namespace TMT1.Views
         }
 
 
-        //Read criminals info
+        //------------------READ CRIMINALS INFO----------------------
+
 
         public string ReadCriminalName()
         {
@@ -91,11 +93,13 @@ namespace TMT1.Views
         }
 
 
-        //Print info
+        //-----------------------PRINT INFO--------------------------
+
 
         public void PrintCountriesInfo(List<Country> coutries)
         {
             Console.WriteLine($"{"ID",-4}{"Country name",-15}");
+
             foreach (var c in coutries)
             {
                 Console.WriteLine($"{c.Id,-4}{c.Name,-15}");
@@ -105,6 +109,7 @@ namespace TMT1.Views
         public void PrintTownsInfo(List<Town> towns)
         {
             Console.WriteLine($"{"ID",-4}{"Town name",-15}");
+
             foreach (var t in towns)
             {
                 Console.WriteLine($"{t.Id,-4}{t.Name,-15}");
@@ -114,6 +119,7 @@ namespace TMT1.Views
         public void PrintAgentsInfo(List<Agent> agents)
         {
             Console.WriteLine($"{"ID",-4}{"Agent name",-15}");
+
             foreach (var a in agents)
             {
                 Console.WriteLine($"{a.Id,-4}{a.Name,-15}");
@@ -123,6 +129,7 @@ namespace TMT1.Views
         public void PrintCriminalsInfo(List<Criminal> criminals)
         {
             Console.WriteLine($"{"ID",-4}{"Town name",-15}");
+
             foreach (var c in criminals)
             {
                 Console.WriteLine($"{c.Id,-4}{c.Name,-15}");
@@ -130,11 +137,13 @@ namespace TMT1.Views
         }
 
 
-        //Print full info
+        //----------------------PRINT FULL INFO------------------------
+
 
         public void PrintFullAgentsInfo(List<Agent> agents)
         {
             Console.WriteLine($"{"ID",-4}{"Agent name",-30}{"Nickname",-17}{"Age",-15}{"TownId",-5}");
+
             foreach (var a in agents)
             {
                 Console.WriteLine($"{a.Id,-4}{a.Name,-30}{a.Nickname,-17}{a.Age,-15}{a.TownId,-5}");               
@@ -144,6 +153,7 @@ namespace TMT1.Views
         public void PrintFullCriminalsInfo(List<Criminal> criminals)
         {
             Console.WriteLine("Info");
+
             foreach (var c in criminals)
             {
                 Line('_', Console.BufferWidth);
@@ -164,7 +174,8 @@ namespace TMT1.Views
         }
 
 
-        //Delete Agents
+        //--------------------------DELETE-------------------------------
+
 
         public void DeleteAgents(List<Agent> agents)
         {
@@ -172,7 +183,7 @@ namespace TMT1.Views
         }
        
 
-        //Print Messages
+        //-----------------------PRINT MESSAGES--------------------------
 
         public void PrintMessage(string message)
         {

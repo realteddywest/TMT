@@ -18,6 +18,7 @@ namespace TMT1.Forms
         private ReadController read;
         private List<Country> countries;
         private List<Town> towns;
+
         public FormAddNewAgent(TMTContext context, InsertController insert, ReadController read)
         {
             InitializeComponent();
@@ -30,10 +31,12 @@ namespace TMT1.Forms
         {
             countries = read.CountriesList();
             towns = read.TownsList();
+
             foreach (var t in towns)
             {
                 comboBox1.Items.Add(t.Name);
             }
+
             foreach (var c in countries)
             {
                 comboBox2.Items.Add(c.Name);
@@ -43,11 +46,11 @@ namespace TMT1.Forms
         private void button1_Click(object sender, EventArgs e)
         {
             bool isAdd = insert.InsertIntoAgents(textBox1.Text, textBox2.Text, int.Parse(textBox3.Text), comboBox1.Text, comboBox2.Text);
+
             if (isAdd)
             {
                 MessageBox.Show("Agent is added!");
             }
-
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

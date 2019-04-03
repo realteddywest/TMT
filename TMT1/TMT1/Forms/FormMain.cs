@@ -18,6 +18,7 @@ namespace TMT1.Forms
         private ReadController read;
         private UpdateController update;
         private DeleteController delete;
+
         public FormMain(TMTContext context, InsertController insert, ReadController read, UpdateController update, DeleteController delete)
         {
             InitializeComponent();
@@ -26,11 +27,6 @@ namespace TMT1.Forms
             this.read = read;
             this.update = update;
             this.delete = delete;
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -43,11 +39,6 @@ namespace TMT1.Forms
         {
             FormReadAgentInfo form = new FormReadAgentInfo(context,read);
             form.Show();
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -68,9 +59,25 @@ namespace TMT1.Forms
             form.Show();
         }
 
+
+        //----------------------EMPTY METHODS-----------------------------
+
+
         private void FormMain_Load(object sender, EventArgs e)
         {
 
         }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }
