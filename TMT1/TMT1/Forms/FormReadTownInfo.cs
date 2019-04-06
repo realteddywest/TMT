@@ -41,7 +41,7 @@ namespace TMT1.Forms
         {
             i--;
 
-            if (i <= 0)
+            if (i < 0)
             {
                 i = towns.Count - 1;
                 labelCountryName.Text = towns[i].Country.Name;
