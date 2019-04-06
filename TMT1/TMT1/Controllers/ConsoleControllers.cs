@@ -308,7 +308,7 @@ namespace TMT1.Controllers
         public void GrowAgent()
         {
             var id = inOut.ReadId();
-            
+
             bool isUpdated = update.GrowAgent(id);
 
             if (isUpdated)
