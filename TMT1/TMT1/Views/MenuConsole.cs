@@ -55,7 +55,9 @@ namespace TMT1.Views
         public string MenuUpdate()
         {
             Console.WriteLine("1 - Update agent nickname");
-            Console.WriteLine("2 - ");
+            Console.WriteLine("2 - Grow agent");
+            Console.WriteLine("3 - Update criminal status");
+            Console.WriteLine("4 - Update criminal sentence");
             Console.WriteLine("0 - Back");
             Console.Write("Choose command: ");
             return Console.ReadLine();

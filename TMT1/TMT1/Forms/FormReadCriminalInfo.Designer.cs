@@ -276,6 +276,7 @@
             // 
             // FormReadCriminalInfo
             // 
+            this.AccessibleName = "FormReadCriminalInfo";
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lavender;
@@ -306,6 +307,7 @@
             this.MaximumSize = new System.Drawing.Size(763, 653);
             this.MinimumSize = new System.Drawing.Size(763, 653);
             this.Name = "FormReadCriminalInfo";
+            this.Text = "FormReadCriminalInfo";
             this.Load += new System.EventHandler(this.FormReadCriminalInfo_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();

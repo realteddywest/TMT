@@ -157,7 +157,16 @@ namespace TMT1.Controllers
                 {
                     case "1":
                         UpdateAgentNickname();
-                        break;                       
+                        break;
+                    case "2":
+                        GrowAgent();
+                        break;
+                    case "3":
+                        UpdateCriminalStatus();
+                        break;
+                    case "4":
+                        UpdateCriminalSentence();
+                        break;
                     case "0":
                         Menu();
                         break;
@@ -284,6 +293,57 @@ namespace TMT1.Controllers
             var id = inOut.ReadId();
             var newNickname = inOut.ReadAgentNick();
             bool isUpdated = update.UpdateAgentNickname(id, newNickname);
+
+            if (isUpdated)
+            {
+                inOut.Line(' ', Console.BufferWidth);
+                Console.WriteLine("Successfully updated");
+            }
+            else
+            {
+                Console.WriteLine("Not found");
+            }
+        }
+
+        public void GrowAgent()
+        {
+            var id = inOut.ReadId();
+            
+            bool isUpdated = update.GrowAgent(id);
+
+            if (isUpdated)
+            {
+                inOut.Line(' ', Console.BufferWidth);
+                Console.WriteLine("Successfully updated agent's age");
+            }
+            else
+            {
+                Console.WriteLine("Not found");
+            }
+        }
+
+        public void UpdateCriminalStatus()
+        {
+            var id = inOut.ReadId();
+            var newStatus = inOut.ReadStatus();
+            bool isUpdated = update.UpdateCriminalStatus(id, newStatus);
+
+            if (isUpdated)
+            {
+                inOut.Line(' ', Console.BufferWidth);
+                Console.WriteLine("Successfully updated");
+            }
+            else
+            {
+                Console.WriteLine("Not found");
+            }
+        }
+
+        public void UpdateCriminalSentence()
+        {
+            var id = inOut.ReadId();
+            var newSentence = inOut.ReadSentence();
+            bool isUpdated = update.UpdateCriminalSentence(id, newSentence);
 
             if (isUpdated)
             {

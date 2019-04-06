@@ -48,7 +48,7 @@ namespace TMT1.Forms
 
             if (isAdd)
             {
-                MessageBox.Show("Criminal is add sucsessfully!");
+                MessageBox.Show("Criminal is added successfully!");
             }
         }
 
