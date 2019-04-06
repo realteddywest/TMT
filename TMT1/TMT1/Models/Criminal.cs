@@ -3,8 +3,6 @@ namespace TMT1
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
-    using System.ComponentModel.DataAnnotations.Schema;
-    using System.Data.Entity.Spatial;
 
     public partial class Criminal
     {
@@ -26,9 +24,9 @@ namespace TMT1
             this.Name = criminalName;
             this.Nickname = criminalNickName;
             this.TownId = townId;
-            this.Crime = Crime;
-            this.Sentence = Sentence;
-            this.Status = Status;
+            this.Crime = crime;
+            this.Sentence = sentence;
+            this.Status = status;
             this.EvilnessFactor = EvilnessFactor;
 
             Agents = new HashSet<Agent>();
@@ -81,14 +79,7 @@ namespace TMT1
             get { return this.crime; }
             set
             {
-                if (value.Length >= 3)
-                {
-                    this.crime = value;
-                }
-                else
-                {
-                    throw new ArgumentException("The facts are invalid!!!");
-                }
+                crime = value; 
             }
         }
 
@@ -99,14 +90,7 @@ namespace TMT1
             get { return this.sentence; }
             set
             {
-                if (value.Length >= 3)
-                {
-                    this.sentence = value;
-                }
-                else
-                {
-                    throw new ArgumentException("The facts are invalid!!!");
-                }
+                sentence = value; 
             }
         }
 

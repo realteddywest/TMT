@@ -36,7 +36,7 @@ namespace TMT1.Forms
             labelCriminalCrime.Text = criminals[i].Crime.ToString();
             labelCriminalSentence.Text = criminals[i].Sentence.ToString();
             labelCriminalStatus.Text = criminals[i].Status.ToString();
-            labelCriminalEvilnessFactor.Text = criminals[i].EvilnessFactor.ToString();
+            labelCriminalEvilnessFactor.Text = criminals[i].EvilnessFactor.Name;
         }
 
 
