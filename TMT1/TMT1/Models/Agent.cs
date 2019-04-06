@@ -12,7 +12,7 @@ namespace TMT1
         private string name;
         private string nickname;
         private int? age;
-        private int? townid;
+        private int?  townid;
        
         public Agent()
         {
@@ -87,14 +87,7 @@ namespace TMT1
             get { return this.townid; }
             set
             {
-                if (value >= 1)
-                {
-                    this.townid = value;
-                }
-                else
-                {
-                    throw new ArgumentException("TownId is incorrect!!!");
-                }
+                townid = value;
             }
         }
 

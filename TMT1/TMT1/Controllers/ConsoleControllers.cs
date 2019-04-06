@@ -80,6 +80,9 @@ namespace TMT1.Controllers
                     case "3":
                         InsertIntoAgents();
                         break;
+                    case "4":
+                        InsertIntoCriminals();
+                        break;
                     case "0":
                         Menu();
                         break;
@@ -190,7 +193,7 @@ namespace TMT1.Controllers
             }
             else
             {
-                inOut.PrintMessage(message.MessageInsertTownTrue
+                inOut.PrintMessage(message.MessageInsertTownFalse
                     (countryName, townName));
             }
         }
